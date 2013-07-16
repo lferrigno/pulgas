@@ -1,0 +1,74 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+  type: InnoDB
+  
+  
+Categoria:
+#  actAs: [Timestampable, Signable, SoftDelete]
+  columns:
+    nombre: {type: string(150), notnull: true}
+    
+SubCategoria:
+#  actAs: [Timestampable, Signable, SoftDelete]
+  columns:
+    nombre: {type: string(150), notnull: true}
+    categoria_id:  {type: integer,notnull: true}
+  relations:
+    Categoria:
+      class: Categoria 
+      local: categoria_id 
+      foreign: id
+      onDelete: CASCADE
+    Anunciantes:
+      class: Anunciante
+      refClass: SubCategoriaAnunciante
+      local: sub_categoria_id 
+      foreign: anunciante_id
+
+Anunciante:
+#  actAs: [Timestampable, Signable, SoftDelete]
+  columns:
+    nombre: {type: string(150), notnull: true}
+    direccion: {type: string(100), notnull: true}
+    localidad: {type: string(50), notnull: true}
+    telefono: {type: string(50), notnull: true}
+    email: {type: string(50), notnull: true}
+    web: {type: string(150), notnull: true}
+    anuncio: {type: string(500), notnull: true}
+    
+  relations:
+    SubCategorias:
+      class: SubCategoria
+      refClass: SubCategoriaAnunciante
+      local: anunciante_id 
+      foreign: sub_categoria_id
+      
+SubCategoriaAnunciante:
+#  actAs: [Timestampable, Signable, SoftDelete]
+  columns:
+    sub_categoria_id: {type: integer, notnull: true}
+    anunciante_id: {type: integer, notnull: true}
+  relations:
+    Anunciante:
+      class: Anunciante 
+      local: anunciante_id 
+      foreign: id
+    SubCategoria:
+      class: SubCategoria 
+      local: sub_categoria_id 
+      foreign: id
+
+AnuncianteFoto:
+  columns:
+    anunciante_id:     { type: integer }
+    filename:       { type: string(255) }
+    caption:        { type: string(255), notnull: true }
+  relations:
+    Anunciante:
+      alias:        Anunciante
+      local: anunciante_id
+      foreign: id
+      foreignType:  many
+      foreignAlias: Fotos
+      onDelete:     cascade      

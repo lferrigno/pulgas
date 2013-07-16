@@ -1,0 +1,1203 @@
+Jul 15 20:29:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jul 15 20:29:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 20:29:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 20:29:18 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jul 15 20:29:18 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Jul 15 20:29:18 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 15 20:29:18 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 15 20:29:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 20:29:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 20:29:18 symfony [info] {sfWebDebugLogger} Configuration 43.13 ms (9)
+Jul 15 20:29:18 symfony [info] {sfWebDebugLogger} Factories 38.54 ms (1)
+Jul 15 20:29:18 symfony [info] {sfWebDebugLogger} Action "default/index" 0.07 ms (1)
+Jul 15 20:29:18 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 4.79 ms (1)
+Jul 15 20:29:18 symfony [info] {sfWebResponse} Send content (29105 o)
+Jul 15 21:07:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 21:07:15 symfony [info] {myUser} Automatic user logout due to timeout
+Jul 15 21:07:15 symfony [info] {myUser} User is not authenticated
+Jul 15 21:07:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 21:07:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 21:07:15 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 21:07:15 symfony [info] {homeActions} Forward to action "default/module"
+Jul 15 21:07:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 21:07:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 21:07:15 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Jul 15 21:07:15 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/controller/default/templates/moduleSuccess.php"
+Jul 15 21:07:15 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 15 21:07:15 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 15 21:07:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 21:07:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 21:07:15 symfony [info] {sfWebDebugLogger} Configuration 10.25 ms (13)
+Jul 15 21:07:15 symfony [info] {sfWebDebugLogger} Factories 18.71 ms (1)
+Jul 15 21:07:15 symfony [info] {sfWebDebugLogger} Action "home/index" 7.58 ms (1)
+Jul 15 21:07:15 symfony [info] {sfWebDebugLogger} Action "default/module" 0.10 ms (1)
+Jul 15 21:07:15 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 5.48 ms (1)
+Jul 15 21:07:15 symfony [info] {sfWebResponse} Send content (31706 o)
+Jul 15 21:39:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 21:39:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 21:39:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 21:39:25 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 21:39:25 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 21:39:25 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 21:39:25 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 21:39:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 21:39:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 21:39:25 symfony [info] {sfWebDebugLogger} Configuration 77.62 ms (10)
+Jul 15 21:39:25 symfony [info] {sfWebDebugLogger} Factories 76.58 ms (1)
+Jul 15 21:39:25 symfony [info] {sfWebDebugLogger} Action "home/index" 0.24 ms (1)
+Jul 15 21:39:25 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.56 ms (1)
+Jul 15 21:39:25 symfony [info] {sfWebResponse} Send content (27159 o)
+Jul 15 21:39:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 21:39:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 21:39:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 21:39:28 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 21:39:28 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 21:39:28 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 21:39:28 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 21:39:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 21:39:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 21:39:28 symfony [info] {sfWebDebugLogger} Configuration 0.66 ms (9)
+Jul 15 21:39:28 symfony [info] {sfWebDebugLogger} Factories 26.42 ms (1)
+Jul 15 21:39:28 symfony [info] {sfWebDebugLogger} Action "home/index" 0.10 ms (1)
+Jul 15 21:39:28 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 1.63 ms (1)
+Jul 15 21:39:28 symfony [info] {sfWebResponse} Send content (27318 o)
+Jul 15 21:39:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 21:39:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 21:39:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 21:39:55 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 21:39:55 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 21:39:55 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 21:39:55 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 21:39:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 21:39:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 21:39:55 symfony [info] {sfWebDebugLogger} Configuration 2.03 ms (9)
+Jul 15 21:39:55 symfony [info] {sfWebDebugLogger} Factories 4.83 ms (1)
+Jul 15 21:39:55 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 21:39:55 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 1.88 ms (1)
+Jul 15 21:39:55 symfony [info] {sfWebResponse} Send content (27355 o)
+Jul 15 22:00:44 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:00:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:00:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:00:44 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:00:44 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:00:44 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:00:44 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:00:44 symfony [err] {sfRenderException} The template "_principal.php" does not exist or is unreadable in "".
+Jul 15 22:00:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 15 22:00:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:00:45 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (9)
+Jul 15 22:00:45 symfony [info] {sfWebDebugLogger} Factories 10.70 ms (1)
+Jul 15 22:00:45 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:00:45 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 21.94 ms (1)
+Jul 15 22:00:45 symfony [info] {sfWebDebugLogger} Partial "home/_principal" 18.88 ms (1)
+Jul 15 22:01:34 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:01:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:01:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:01:34 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:01:34 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:01:34 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:01:34 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:01:34 symfony [err] {sfWebDebugLogger}  Error at /home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/view/sfPartialView.class.php on line 56 (Argument 1 passed to sfPartialView::setPartialVars() must be an array, string given, called in /home/rada/dev/pulgasWeb/codigo/lib/vendor/symfony/lib/helper/PartialHelper.php on line 218 and defined)
+Jul 15 22:01:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:01:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:01:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:01:40 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:01:40 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:01:40 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:01:40 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:01:40 symfony [err] {sfRenderException} The template "_principal.php" does not exist or is unreadable in "".
+Jul 15 22:01:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 15 22:01:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:01:40 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Jul 15 22:01:40 symfony [info] {sfWebDebugLogger} Factories 3.93 ms (1)
+Jul 15 22:01:40 symfony [info] {sfWebDebugLogger} Action "home/index" 0.10 ms (1)
+Jul 15 22:01:40 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 28.03 ms (1)
+Jul 15 22:01:40 symfony [info] {sfWebDebugLogger} Partial "home/_principal" 24.11 ms (1)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:02:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:02:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:02:22 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:02:22 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:02:22 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:02:22 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:02:22 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 1.33 ms (9)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 3.96 ms (1)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Action "home/index" 0.08 ms (1)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.25 ms (1)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.21 ms (1)
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send content (34321 o)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_laRevista.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_laRevista.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_recetas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_recetas.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_anunciantes1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_anunciantes1.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_notas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_notas.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_actividades.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_actividades.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_revistaOnLine.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_revistaOnLine.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.48 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 3.09 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.63 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 43.45 ms (1)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.43 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 76.39 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.47 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 35.19 ms (1)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 7.74 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 116.00 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.47 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 155.35 ms (1)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/educacion.png with parameters array (  'module' => 'img',  'action' => 'botones',  'educacion.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/fiestas.png with parameters array (  'module' => 'img',  'action' => 'botones',  'fiestas.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.54 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 67.75 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.49 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 25.46 ms (1)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/hogar.png with parameters array (  'module' => 'img',  'action' => 'botones',  'hogar.png' => true,)
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/encontranos.png" (/).
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.42 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 111.07 ms (1)
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/estetica.png with parameters array (  'module' => 'img',  'action' => 'botones',  'estetica.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/ninos.png with parameters array (  'module' => 'img',  'action' => 'botones',  'ninos.png' => true,)
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.55 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 194.36 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 83.34 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 0.60 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 327.00 ms (1)
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Configuration 2.03 ms (5)
+Jul 15 22:02:22 symfony [info] {sfWebDebugLogger} Factories 48.40 ms (1)
+Jul 15 22:02:22 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:02:22 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 0.40 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 230.61 ms (1)
+Jul 15 22:02:23 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 0.38 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 157.95 ms (1)
+Jul 15 22:02:23 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 0.56 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 221.74 ms (1)
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 0.32 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 67.66 ms (1)
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 0.40 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 123.31 ms (1)
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/revista_online.png" (/).
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 193.18 ms (1)
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/boton_verMas.png" (/).
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 0.52 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 254.19 ms (1)
+Jul 15 22:02:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:02:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Configuration 3.06 ms (5)
+Jul 15 22:02:23 symfony [info] {sfWebDebugLogger} Factories 118.31 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:03:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:03:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:03:47 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:03:47 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:03:47 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:03:47 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:03:47 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 4.38 ms (10)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 5.41 ms (1)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Action "home/index" 0.09 ms (1)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 7.13 ms (1)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.38 ms (1)
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send content (34561 o)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_actividades.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_actividades.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_laRevista.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_laRevista.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.93 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 13.08 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_revistaOnLine.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_revistaOnLine.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_notas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_notas.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_anunciantes1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_anunciantes1.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_recetas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_recetas.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.51 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 22.18 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 9.65 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 57.85 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.48 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 82.37 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.49 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 91.77 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.39 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 78.04 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/educacion.png with parameters array (  'module' => 'img',  'action' => 'botones',  'educacion.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.57 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 92.04 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/fiestas.png with parameters array (  'module' => 'img',  'action' => 'botones',  'fiestas.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 191.26 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/hogar.png with parameters array (  'module' => 'img',  'action' => 'botones',  'hogar.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 247.84 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/estetica.png with parameters array (  'module' => 'img',  'action' => 'botones',  'estetica.png' => true,)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 95.11 ms (1)
+Jul 15 22:03:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/ninos.png with parameters array (  'module' => 'img',  'action' => 'botones',  'ninos.png' => true,)
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/encontranos.png" (/).
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.38 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 206.00 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.36 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 182.69 ms (1)
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/boton_verMas.png" (/).
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 22.44 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.36 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 85.24 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.62 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 178.02 ms (1)
+Jul 15 22:03:47 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.41 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 180.34 ms (1)
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/revista_online.png" (/).
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.70 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 110.67 ms (1)
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.41 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 186.32 ms (1)
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.48 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 106.91 ms (1)
+Jul 15 22:03:47 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Configuration 0.47 ms (5)
+Jul 15 22:03:47 symfony [info] {sfWebDebugLogger} Factories 165.49 ms (1)
+Jul 15 22:03:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:03:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:03:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:03:48 symfony [info] {sfWebDebugLogger} Configuration 3.92 ms (5)
+Jul 15 22:03:48 symfony [info] {sfWebDebugLogger} Factories 128.47 ms (1)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:05:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:05:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:05:13 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:05:13 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:05:13 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:05:13 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:05:13 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 3.92 ms (1)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Action "home/index" 0.12 ms (1)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 6.09 ms (1)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.42 ms (1)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send content (34559 o)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_anunciantes1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_anunciantes1.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_laRevista.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_laRevista.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_actividades.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_actividades.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_revistaOnLine.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_revistaOnLine.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_notas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_notas.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_recetas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_recetas.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.63 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 45.42 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 88.21 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 15.99 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 112.72 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 10.12 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 149.14 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 14.49 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 203.14 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.69 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 148.39 ms (1)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/educacion.png with parameters array (  'module' => 'img',  'action' => 'botones',  'educacion.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/fiestas.png with parameters array (  'module' => 'img',  'action' => 'botones',  'fiestas.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.56 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 260.60 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.58 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 38.19 ms (1)
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/hogar.png with parameters array (  'module' => 'img',  'action' => 'botones',  'hogar.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/estetica.png with parameters array (  'module' => 'img',  'action' => 'botones',  'estetica.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 2.37 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 208.89 ms (1)
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/encontranos.png" (/).
+Jul 15 22:05:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/ninos.png with parameters array (  'module' => 'img',  'action' => 'botones',  'ninos.png' => true,)
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.57 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 196.24 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 4.31 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 185.16 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.50 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 359.71 ms (1)
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/boton_verMas.png" (/).
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.59 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 34.17 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.50 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 189.28 ms (1)
+Jul 15 22:05:13 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:05:13 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Configuration 0.61 ms (5)
+Jul 15 22:05:13 symfony [info] {sfWebDebugLogger} Factories 260.79 ms (1)
+Jul 15 22:05:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Configuration 0.57 ms (5)
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Factories 70.16 ms (1)
+Jul 15 22:05:14 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:05:14 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Configuration 0.55 ms (5)
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Factories 261.67 ms (1)
+Jul 15 22:05:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (5)
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Factories 120.30 ms (1)
+Jul 15 22:05:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Configuration 4.70 ms (5)
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Factories 321.71 ms (1)
+Jul 15 22:05:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/revista_online.png" (/).
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Factories 269.73 ms (1)
+Jul 15 22:05:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jul 15 22:05:14 symfony [info] {sfWebDebugLogger} Factories 187.14 ms (1)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:06:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:06:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:06:29 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:06:29 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:06:29 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:06:29 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:06:29 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 3.02 ms (1)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Action "home/index" 0.09 ms (1)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.09 ms (1)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.42 ms (1)
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send content (34563 o)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_anunciantes1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_anunciantes1.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/educacion.png with parameters array (  'module' => 'img',  'action' => 'botones',  'educacion.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_notas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_notas.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_recetas.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_recetas.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_revistaOnLine.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_revistaOnLine.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 0.49 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 3.96 ms (1)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 0.65 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 43.92 ms (1)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/boton_actividades.png with parameters array (  'module' => 'img',  'action' => 'banners',  'boton_actividades.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 94.09 ms (1)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 0.38 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 116.64 ms (1)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 1.94 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 137.27 ms (1)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 1.84 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 65.62 ms (1)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/fiestas.png with parameters array (  'module' => 'img',  'action' => 'botones',  'fiestas.png' => true,)
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/encontranos.png" (/).
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 5.28 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 191.63 ms (1)
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/hogar.png with parameters array (  'module' => 'img',  'action' => 'botones',  'hogar.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:29 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/estetica.png with parameters array (  'module' => 'img',  'action' => 'botones',  'estetica.png' => true,)
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jul 15 22:06:29 symfony [info] {sfWebDebugLogger} Factories 158.58 ms (1)
+Jul 15 22:06:30 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 105.74 ms (1)
+Jul 15 22:06:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/ninos.png with parameters array (  'module' => 'img',  'action' => 'botones',  'ninos.png' => true,)
+Jul 15 22:06:30 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 101.33 ms (1)
+Jul 15 22:06:30 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 183.98 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 61.13 ms (1)
+Jul 15 22:06:30 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.69 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 139.87 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/boton_verMas.png" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.58 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 67.47 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 48.48 ms (1)
+Jul 15 22:06:30 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.40 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 188.08 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/revista_online.png" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.37 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 125.72 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 3.96 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 70.81 ms (1)
+Jul 15 22:06:30 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 324.54 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 148.44 ms (1)
+Jul 15 22:06:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:06:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Configuration 0.43 ms (5)
+Jul 15 22:06:30 symfony [info] {sfWebDebugLogger} Factories 2.66 ms (1)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:10:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:10:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:10:05 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:10:05 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:10:05 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:10:05 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:10:05 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (9)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 3.34 ms (1)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 4.19 ms (1)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.80 ms (1)
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send content (34258 o)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 3.41 ms (1)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/educacion.png with parameters array (  'module' => 'img',  'action' => 'botones',  'educacion.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/fiestas.png with parameters array (  'module' => 'img',  'action' => 'botones',  'fiestas.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 27.08 ms (1)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/hogar.png with parameters array (  'module' => 'img',  'action' => 'botones',  'hogar.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.39 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 75.03 ms (1)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/estetica.png with parameters array (  'module' => 'img',  'action' => 'botones',  'estetica.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.52 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 146.05 ms (1)
+Jul 15 22:10:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/ninos.png with parameters array (  'module' => 'img',  'action' => 'botones',  'ninos.png' => true,)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 75.93 ms (1)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.97 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 231.73 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/encontranos.png" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 246.43 ms (1)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 19.94 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 248.13 ms (1)
+Jul 15 22:10:05 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.55 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 199.40 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/revista_online.png" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.39 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 105.14 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/boton_verMas.png" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.50 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 175.77 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 284.01 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.69 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 171.16 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.63 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 165.00 ms (1)
+Jul 15 22:10:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:10:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Configuration 0.47 ms (5)
+Jul 15 22:10:05 symfony [info] {sfWebDebugLogger} Factories 155.52 ms (1)
+Jul 15 22:11:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:11:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:11:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:11:17 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:11:17 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:11:17 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:11:17 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:11:17 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:11:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:11:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:17 symfony [info] {sfWebDebugLogger} Configuration 1.10 ms (9)
+Jul 15 22:11:17 symfony [info] {sfWebDebugLogger} Factories 3.77 ms (1)
+Jul 15 22:11:17 symfony [info] {sfWebDebugLogger} Action "home/index" 0.10 ms (1)
+Jul 15 22:11:17 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.66 ms (1)
+Jul 15 22:11:17 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.56 ms (1)
+Jul 15 22:11:17 symfony [info] {sfWebResponse} Send content (34258 o)
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/fiestas.png with parameters array (  'module' => 'img',  'action' => 'botones',  'fiestas.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/educacion.png with parameters array (  'module' => 'img',  'action' => 'botones',  'educacion.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/hogar.png with parameters array (  'module' => 'img',  'action' => 'botones',  'hogar.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.38 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 28.99 ms (1)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/estetica.png with parameters array (  'module' => 'img',  'action' => 'botones',  'estetica.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 47.42 ms (1)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 7.21 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 76.21 ms (1)
+Jul 15 22:11:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/botones/ninos.png with parameters array (  'module' => 'img',  'action' => 'botones',  'ninos.png' => true,)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 22.23 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 118.41 ms (1)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.43 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 47.96 ms (1)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 156.69 ms (1)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 146.59 ms (1)
+Jul 15 22:11:18 symfony [info] {sfFrontWebController} Action "img/botones" does not exist
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Action "img/botones" does not exist.
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.55 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 211.11 ms (1)
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/revista_online.png" (/).
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 83.02 ms (1)
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 75.13 ms (1)
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.40 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 83.24 ms (1)
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.47 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 227.54 ms (1)
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 111.37 ms (1)
+Jul 15 22:11:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/boton_verMas.png" (/).
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:11:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Configuration 0.39 ms (5)
+Jul 15 22:11:18 symfony [info] {sfWebDebugLogger} Factories 256.60 ms (1)
+Jul 15 22:15:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:15:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:15:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:15:07 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:15:07 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:15:07 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:15:07 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:15:07 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 0.75 ms (9)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 4.73 ms (1)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Action "home/index" 0.13 ms (1)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.27 ms (1)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.74 ms (1)
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send content (34313 o)
+Jul 15 22:15:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner1.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner1.png' => true,)
+Jul 15 22:15:07 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 4.19 ms (1)
+Jul 15 22:15:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner2.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner2.png' => true,)
+Jul 15 22:15:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /img/banners/banner3.png with parameters array (  'module' => 'img',  'action' => 'banners',  'banner3.png' => true,)
+Jul 15 22:15:07 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 10.20 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 14.14 ms (1)
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 0.52 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 15.38 ms (1)
+Jul 15 22:15:07 symfony [info] {sfFrontWebController} Action "img/banners" does not exist
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Action "img/banners" does not exist.
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 0.62 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 96.91 ms (1)
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/pulbicidad.png" (/).
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 0.56 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 89.23 ms (1)
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 2.72 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 119.48 ms (1)
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/img/imagenNotas.png" (/).
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 5.40 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 145.91 ms (1)
+Jul 15 22:15:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:15:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Configuration 1.17 ms (5)
+Jul 15 22:15:07 symfony [info] {sfWebDebugLogger} Factories 4.99 ms (1)
+Jul 15 22:17:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:17:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:17:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:17:15 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:17:15 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:17:15 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:17:15 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:17:15 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Configuration 0.75 ms (9)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Factories 4.03 ms (1)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 2.73 ms (1)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.78 ms (1)
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send content (34315 o)
+Jul 15 22:17:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Factories 40.45 ms (1)
+Jul 15 22:17:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.js" (/).
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Configuration 1.73 ms (5)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Factories 58.57 ms (1)
+Jul 15 22:17:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/bootstrap.js" (/).
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 15 22:17:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jul 15 22:17:15 symfony [info] {sfWebDebugLogger} Factories 5.09 ms (1)
+Jul 15 22:19:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:19:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:19:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:19:02 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:19:02 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:19:02 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:02 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:02 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:19:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:19:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:19:02 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Jul 15 22:19:02 symfony [info] {sfWebDebugLogger} Factories 5.35 ms (1)
+Jul 15 22:19:02 symfony [info] {sfWebDebugLogger} Action "home/index" 0.40 ms (1)
+Jul 15 22:19:02 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.65 ms (1)
+Jul 15 22:19:02 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.84 ms (1)
+Jul 15 22:19:02 symfony [info] {sfWebResponse} Send content (34236 o)
+Jul 15 22:19:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:19:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:19:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:19:05 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:19:05 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:19:05 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:05 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:05 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:19:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:19:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:19:05 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (9)
+Jul 15 22:19:05 symfony [info] {sfWebDebugLogger} Factories 4.43 ms (1)
+Jul 15 22:19:05 symfony [info] {sfWebDebugLogger} Action "home/index" 0.14 ms (1)
+Jul 15 22:19:05 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.88 ms (1)
+Jul 15 22:19:05 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.61 ms (1)
+Jul 15 22:19:05 symfony [info] {sfWebResponse} Send content (34236 o)
+Jul 15 22:19:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:19:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:19:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:19:10 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:19:10 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:19:10 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:10 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:10 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:19:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:19:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:19:10 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Jul 15 22:19:10 symfony [info] {sfWebDebugLogger} Factories 6.21 ms (1)
+Jul 15 22:19:10 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:19:10 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.45 ms (1)
+Jul 15 22:19:10 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 1.14 ms (1)
+Jul 15 22:19:10 symfony [info] {sfWebResponse} Send content (34204 o)
+Jul 15 22:19:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:19:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:19:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:19:52 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:19:52 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:19:52 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:52 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:19:52 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:19:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:19:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:19:52 symfony [info] {sfWebDebugLogger} Configuration 3.22 ms (10)
+Jul 15 22:19:52 symfony [info] {sfWebDebugLogger} Factories 2.94 ms (1)
+Jul 15 22:19:52 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:19:52 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 7.59 ms (1)
+Jul 15 22:19:52 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.85 ms (1)
+Jul 15 22:19:52 symfony [info] {sfWebResponse} Send content (34647 o)
+Jul 15 22:20:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:20:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:20:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:20:03 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:20:03 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:20:03 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:20:03 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:20:03 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_principal.php"
+Jul 15 22:20:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:20:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:20:03 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (9)
+Jul 15 22:20:03 symfony [info] {sfWebDebugLogger} Factories 3.75 ms (1)
+Jul 15 22:20:03 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:20:03 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 5.42 ms (1)
+Jul 15 22:20:03 symfony [info] {sfWebDebugLogger} Partial "global/_principal" 0.87 ms (1)
+Jul 15 22:20:03 symfony [info] {sfWebResponse} Send content (34393 o)
+Jul 15 22:24:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:24:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:24:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:24:21 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:24:21 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:24:21 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:24:21 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:24:21 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:24:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:24:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:24:21 symfony [info] {sfWebDebugLogger} Configuration 0.67 ms (9)
+Jul 15 22:24:21 symfony [info] {sfWebDebugLogger} Factories 4.27 ms (1)
+Jul 15 22:24:21 symfony [info] {sfWebDebugLogger} Action "home/index" 0.06 ms (1)
+Jul 15 22:24:21 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 4.81 ms (1)
+Jul 15 22:24:21 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.48 ms (1)
+Jul 15 22:24:21 symfony [info] {sfWebResponse} Send content (34303 o)
+Jul 15 22:24:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:24:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:24:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:24:25 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:24:25 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:24:25 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:24:25 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:24:25 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:24:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:24:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:24:25 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (9)
+Jul 15 22:24:25 symfony [info] {sfWebDebugLogger} Factories 2.72 ms (1)
+Jul 15 22:24:25 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:24:25 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 3.54 ms (1)
+Jul 15 22:24:25 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.32 ms (1)
+Jul 15 22:24:25 symfony [info] {sfWebResponse} Send content (34375 o)
+Jul 15 22:30:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:30:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:30:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:30:56 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:30:56 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:30:56 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:30:56 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:30:56 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:30:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:30:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:30:56 symfony [info] {sfWebDebugLogger} Configuration 56.17 ms (9)
+Jul 15 22:30:56 symfony [info] {sfWebDebugLogger} Factories 36.70 ms (1)
+Jul 15 22:30:56 symfony [info] {sfWebDebugLogger} Action "home/index" 0.06 ms (1)
+Jul 15 22:30:56 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 4.64 ms (1)
+Jul 15 22:30:56 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.97 ms (1)
+Jul 15 22:30:56 symfony [info] {sfWebResponse} Send content (34337 o)
+Jul 15 22:32:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:32:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:32:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:32:30 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:32:30 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:32:30 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:32:30 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:32:30 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:32:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:32:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:32:30 symfony [info] {sfWebDebugLogger} Configuration 0.69 ms (9)
+Jul 15 22:32:30 symfony [info] {sfWebDebugLogger} Factories 3.75 ms (1)
+Jul 15 22:32:30 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:32:30 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 2.26 ms (1)
+Jul 15 22:32:30 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.31 ms (1)
+Jul 15 22:32:30 symfony [info] {sfWebResponse} Send content (34329 o)
+Jul 15 22:32:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:32:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:32:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:32:58 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:32:58 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:32:58 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:32:58 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:32:58 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:32:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:32:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:32:58 symfony [info] {sfWebDebugLogger} Configuration 0.61 ms (9)
+Jul 15 22:32:58 symfony [info] {sfWebDebugLogger} Factories 2.88 ms (1)
+Jul 15 22:32:58 symfony [info] {sfWebDebugLogger} Action "home/index" 0.06 ms (1)
+Jul 15 22:32:58 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 2.00 ms (1)
+Jul 15 22:32:58 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.33 ms (1)
+Jul 15 22:32:58 symfony [info] {sfWebResponse} Send content (34334 o)
+Jul 15 22:33:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:33:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:33:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:33:10 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:33:10 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:33:10 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:33:10 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:33:10 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:33:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:33:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:33:10 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Jul 15 22:33:10 symfony [info] {sfWebDebugLogger} Factories 3.42 ms (1)
+Jul 15 22:33:10 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Jul 15 22:33:10 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 4.01 ms (1)
+Jul 15 22:33:10 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.83 ms (1)
+Jul 15 22:33:10 symfony [info] {sfWebResponse} Send content (34334 o)
+Jul 15 22:33:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 15 22:33:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 15 22:33:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 15 22:33:17 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 15 22:33:17 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 15 22:33:17 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:33:17 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/layout.php"
+Jul 15 22:33:17 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/codigo/apps/frontend/templates/_menu.php"
+Jul 15 22:33:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 15 22:33:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} Factories 2.38 ms (1)
+Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} Action "home/index" 0.15 ms (1)
+Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 4.61 ms (1)
+Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.99 ms (1)
+Jul 15 22:33:17 symfony [info] {sfWebResponse} Send content (34356 o)

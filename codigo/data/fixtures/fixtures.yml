@@ -1,0 +1,79 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+# User:
+#   fabien:
+#     username: fabien
+#     password: changeme
+#     name:     Fabien Potencier
+#     email:    fabien.potencier@symfony-project.com
+#   kris:
+#     username: Kris.Wallsmith
+#     password: changeme
+#     name:     Kris Wallsmith
+#     email:    kris.wallsmith@symfony-project.com
+
+Categoria:
+  categoria_1:
+    nombre: Fiestas
+  categoria_2:
+    nombre: Niños
+  categoria_3:
+    nombre: Educación
+  categoria_4:
+    nombre: Salud
+  categoria_5:
+    nombre: Otros Profesionales
+  categoria_6:
+    nombre: Estética
+  categoria_7:
+    nombre: Hogar
+
+SubCategoria:
+  sub_categoria_1_1:
+    Categoria: categoria_1
+    nombre: Fiestas 1
+  sub_categoria_1_2:
+    Categoria: categoria_1
+    nombre: Fiestas 2
+  sub_categoria_2_1:
+    Categoria: categoria_2
+    nombre: Niños 1
+  sub_categoria_2_2:
+    Categoria: categoria_2
+    nombre: Niños 2
+  sub_categoria_3_1:
+    Categoria: categoria_3
+    nombre: Educación 1
+  sub_categoria_3_2:
+    Categoria: categoria_3
+    nombre: Educación 2
+  sub_categoria_4_1:
+    Categoria: categoria_4
+    nombre: Salud 1
+  sub_categoria_4_2:
+    Categoria: categoria_4
+    nombre: Salud 2
+  sub_categoria_5_1:
+    Categoria: categoria_5
+    nombre: Otros 1
+  sub_categoria_5_2:
+    Categoria: categoria_5
+    nombre: Otros 2
+  sub_categoria_6_1:
+    Categoria: categoria_6
+    nombre: Estética 1
+  sub_categoria_6_2:
+    Categoria: categoria_6
+    nombre: Estética 2
+  sub_categoria_1_1:
+    Categoria: categoria_7
+    nombre: Hogar 1
+  sub_categoria_7_2:
+    Categoria: categoria_7
+    nombre: Hogar 2
+
+  
