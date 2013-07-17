@@ -1,32 +1,35 @@
-<h1>Anunciantes List</h1>
+<h1>Anunciantes</h1>
+<a href="<?php echo url_for('anunciante/new') ?>"
+	class="btn btn-primary btn-nuevo">Nuevo Anunciante</a>
 
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Nombre</th>
-      <th>Direccion</th>
-      <th>Localidad</th>
-      <th>Telefono</th>
-      <th>Email</th>
-      <th>Web</th>
-      <th>Anuncio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php foreach ($anunciantes as $anunciante): ?>
-    <tr>
-      <td><a href="<?php echo url_for('anunciante/show?id='.$anunciante->getId()) ?>"><?php echo $anunciante->getId() ?></a></td>
-      <td><?php echo $anunciante->getNombre() ?></td>
-      <td><?php echo $anunciante->getDireccion() ?></td>
-      <td><?php echo $anunciante->getLocalidad() ?></td>
-      <td><?php echo $anunciante->getTelefono() ?></td>
-      <td><?php echo $anunciante->getEmail() ?></td>
-      <td><?php echo $anunciante->getWeb() ?></td>
-      <td><?php echo $anunciante->getAnuncio() ?></td>
-    </tr>
-    <?php endforeach; ?>
-  </tbody>
-</table>
+<div class="span9">
+	<table class="lista table table-hover table-bordered">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Categor&iacute;a</th>
+				<th>Sub Categor&iacute;a</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach ($anunciantes as $anunciante): ?>
 
-  <a href="<?php echo url_for('anunciante/new') ?>">New</a>
+			<tr>
+				<td><?php echo $anunciante->getNombre() ?></td>
+				<td><?php echo $anunciante->getSubCategorias()->getFirst()->getCategoria()?></td>
+				<td><?php echo $anunciante->getSubCategorias()->getFirst() ?></td>
+				
+				<td><a
+					href="<?php echo url_for('anunciante/edit?id='.$anunciante->getId()) ?>">Editar</a>
+
+					<a
+					href="<?php echo url_for('anunciante/delete?id='.$anunciante->getId()) ?>">Eliminar</a>
+				</td>
+			</tr>
+			<?php endforeach; ?>
+	
+	</table>
+</div>
+
+<div style="clear: both;"></div>

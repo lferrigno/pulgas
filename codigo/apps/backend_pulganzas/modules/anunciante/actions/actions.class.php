@@ -17,12 +17,6 @@ class anuncianteActions extends sfActions
       ->execute();
   }
 
-  public function executeShow(sfWebRequest $request)
-  {
-    $this->anunciante = Doctrine_Core::getTable('Anunciante')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->anunciante);
-  }
-
   public function executeNew(sfWebRequest $request)
   {
     $this->form = new AnuncianteForm();
@@ -43,14 +37,36 @@ class anuncianteActions extends sfActions
   {
     $this->forward404Unless($anunciante = Doctrine_Core::getTable('Anunciante')->find(array($request->getParameter('id'))), sprintf('Object anunciante does not exist (%s).', $request->getParameter('id')));
     $this->form = new AnuncianteForm($anunciante);
+    $this->fotoForm = null;
   }
-
+  
+  public function executeAgregarFoto(sfWebRequest $request)
+  {
+  	$this->forward404Unless($anunciante = Doctrine_Core::getTable('Anunciante')->find(array($request->getParameter('id'))), sprintf('Object anunciante does not exist (%s).', $request->getParameter('id')));
+  	$this->form = new AnuncianteForm($anunciante);
+  	$this->fotoForm = new AnuncianteConFotoForm($anunciante);
+  	$this->setTemplate('edit');
+  	 
+  }
+  public function executeGuardarNuevaFoto(sfWebRequest $request)
+  {
+  	$this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
+  	$this->forward404Unless($anunciante = Doctrine_Core::getTable('Anunciante')->find(array($request->getParameter('id'))), sprintf('Object anunciante does not exist (%s).', $request->getParameter('id')));
+    	$this->form = new AnuncianteForm($anunciante);
+  	$this->fotoForm = new AnuncianteConFotoForm($anunciante);
+  	$this->processForm($request, $this->fotoForm);
+  
+  	$this->setTemplate('edit');
+  }
+  
+  
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
     $this->forward404Unless($anunciante = Doctrine_Core::getTable('Anunciante')->find(array($request->getParameter('id'))), sprintf('Object anunciante does not exist (%s).', $request->getParameter('id')));
     $this->form = new AnuncianteForm($anunciante);
-
+    $this->fotoForm = null;
+    
     $this->processForm($request, $this->form);
 
     $this->setTemplate('edit');

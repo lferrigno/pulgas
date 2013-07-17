@@ -12,4 +12,7 @@
  */
 class SubCategoria extends BaseSubCategoria
 {
+	public function __toString(){
+		return $this->getNombre();
+	}
 }

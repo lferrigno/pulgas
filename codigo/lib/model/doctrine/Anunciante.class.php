@@ -12,4 +12,5 @@
  */
 class Anunciante extends BaseAnunciante
 {
+	
 }
