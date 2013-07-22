@@ -1,24 +1,26 @@
-	<div class="menu_izq"></div>
-	<div class="menu">
-		<ul>
-			<li><a href="#" target="_blank"> <?php echo image_tag('banners/boton_laRevista.png',array()) ?>
-			</a>
-			</li>
-			<li><a href="#" target="_blank"> <?php echo image_tag('banners/boton_anunciantes1.png',array()) ?>
-			</a>
-			</li>
-			<li><a href="#" target="_blank"> <?php echo image_tag('banners/boton_revistaOnLine.png',array()) ?>
-			</a>
-			</li>
-			<li><a href="#" target="_blank"> <?php echo image_tag('banners/boton_recetas.png',array()) ?>
-			</a>
-			</li>
-			<li><a href="#" target="_blank"> <?php echo image_tag('banners/boton_notas.png',array()) ?>
-			</a>
-			</li>
-			<li><a href="#" target="_blank"> <?php echo image_tag('banners/boton_actividades.png',array()) ?>
-			</a>
-			</li>
-		</ul>
-	</div>
-	<div class="menu_der"></div>
+      <div class="" style="padding-right:20px;padding-left:20px;">
+                <ul class="nav nav-pills">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Anunciantes
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="sub"><a href="<?php echo url_for('anunciante/index') ?>">Anunciantes</a></li>
+                      <li class="sub"><a href="<?php echo url_for('sub_categoria/index') ?>">Sub Categor&iacute;a</a></li>
+                      <li class="sub"><a href="<?php echo url_for('categoria/index') ?>">Categor&iacute;a</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Otros
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="sub"><a href="#">Otro 1</a></li>
+                      <li class="sub"><a href="#">Otro 2</a></li>
+                      <li class="sub"><a href="#">Otro 3</a></li>
+                    </ul>
+                  </li>
+                         
+              
+                </ul>
+            </div>

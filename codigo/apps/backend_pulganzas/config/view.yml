@@ -15,7 +15,7 @@ default:
 
   stylesheets:    [bootstrap.css, estilos.css, bootstrap-responsive.css]
 
-  javascripts:    [jquery.js, bootstrap.js]
+  javascripts:    [jquery.js, bootstrap.js, bootstrap-dropdown.js]
 
   has_layout:     true
   layout:         layout

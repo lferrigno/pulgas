@@ -11,6 +11,7 @@
  * @property string $telefono
  * @property string $email
  * @property string $web
+ * @property string $facebook
  * @property string $anuncio
  * @property Doctrine_Collection $SubCategorias
  * @property Doctrine_Collection $SubCategoriaAnunciante
@@ -22,6 +23,7 @@
  * @method string              getTelefono()               Returns the current record's "telefono" value
  * @method string              getEmail()                  Returns the current record's "email" value
  * @method string              getWeb()                    Returns the current record's "web" value
+ * @method string              getFacebook()               Returns the current record's "facebook" value
  * @method string              getAnuncio()                Returns the current record's "anuncio" value
  * @method Doctrine_Collection getSubCategorias()          Returns the current record's "SubCategorias" collection
  * @method Doctrine_Collection getSubCategoriaAnunciante() Returns the current record's "SubCategoriaAnunciante" collection
@@ -32,6 +34,7 @@
  * @method Anunciante          setTelefono()               Sets the current record's "telefono" value
  * @method Anunciante          setEmail()                  Sets the current record's "email" value
  * @method Anunciante          setWeb()                    Sets the current record's "web" value
+ * @method Anunciante          setFacebook()               Sets the current record's "facebook" value
  * @method Anunciante          setAnuncio()                Sets the current record's "anuncio" value
  * @method Anunciante          setSubCategorias()          Sets the current record's "SubCategorias" collection
  * @method Anunciante          setSubCategoriaAnunciante() Sets the current record's "SubCategoriaAnunciante" collection
@@ -59,22 +62,27 @@ abstract class BaseAnunciante extends sfDoctrineRecord
              ));
         $this->hasColumn('localidad', 'string', 50, array(
              'type' => 'string',
-             'notnull' => true,
+             'notnull' => false,
              'length' => 50,
              ));
         $this->hasColumn('telefono', 'string', 50, array(
              'type' => 'string',
-             'notnull' => true,
+             'notnull' => false,
              'length' => 50,
              ));
         $this->hasColumn('email', 'string', 50, array(
              'type' => 'string',
-             'notnull' => true,
+             'notnull' => false,
              'length' => 50,
              ));
         $this->hasColumn('web', 'string', 150, array(
              'type' => 'string',
-             'notnull' => true,
+             'notnull' => false,
+             'length' => 150,
+             ));
+        $this->hasColumn('facebook', 'string', 150, array(
+             'type' => 'string',
+             'notnull' => false,
              'length' => 150,
              ));
         $this->hasColumn('anuncio', 'string', 500, array(

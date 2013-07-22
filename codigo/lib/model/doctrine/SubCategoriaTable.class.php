@@ -16,4 +16,10 @@ class SubCategoriaTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('SubCategoria');
     }
+    
+    public function getByCategoria($categoriaId) {
+    	$q = $this->createQuery('sc')
+    	->where('sc.categoria_id = ?', $categoriaId);
+    	return $q->execute();
+    }
 }

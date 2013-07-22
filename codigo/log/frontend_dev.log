@@ -1201,3 +1201,19 @@ Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} Action "home/index" 0.15 ms (1
 Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 4.61 ms (1)
 Jul 15 22:33:17 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 0.99 ms (1)
 Jul 15 22:33:17 symfony [info] {sfWebResponse} Send content (34356 o)
+Jul 18 19:52:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Jul 18 19:52:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 19:52:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 19:52:14 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Jul 18 19:52:14 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/pulgas/codigo/apps/frontend/modules/home/templates/indexSuccess.php"
+Jul 18 19:52:14 symfony [info] {sfPHPView} Decorate content with "/home/rada/dev/pulgasWeb/pulgas/codigo/apps/frontend/templates/layout.php"
+Jul 18 19:52:14 symfony [info] {sfPHPView} Render "/home/rada/dev/pulgasWeb/pulgas/codigo/apps/frontend/templates/layout.php"
+Jul 18 19:52:14 symfony [info] {sfPartialView} Render "/home/rada/dev/pulgasWeb/pulgas/codigo/apps/frontend/templates/_menu.php"
+Jul 18 19:52:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 19:52:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 19:52:14 symfony [info] {sfWebDebugLogger} Configuration 982.48 ms (9)
+Jul 18 19:52:14 symfony [info] {sfWebDebugLogger} Factories 747.68 ms (1)
+Jul 18 19:52:14 symfony [info] {sfWebDebugLogger} Action "home/index" 0.42 ms (1)
+Jul 18 19:52:14 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 169.21 ms (1)
+Jul 18 19:52:14 symfony [info] {sfWebDebugLogger} Partial "global/_menu" 10.57 ms (1)
+Jul 18 19:52:14 symfony [info] {sfWebResponse} Send content (34198 o)

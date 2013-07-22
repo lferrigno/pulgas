@@ -31,10 +31,11 @@ Anunciante:
   columns:
     nombre: {type: string(150), notnull: true}
     direccion: {type: string(100), notnull: true}
-    localidad: {type: string(50), notnull: true}
-    telefono: {type: string(50), notnull: true}
-    email: {type: string(50), notnull: true}
-    web: {type: string(150), notnull: true}
+    localidad: {type: string(50), notnull: false}
+    telefono: {type: string(50), notnull: false}
+    email: {type: string(50), notnull: false}
+    web: {type: string(150), notnull: false}
+    facebook: {type: string(150), notnull: false}
     anuncio: {type: string(500), notnull: true}
     
   relations:

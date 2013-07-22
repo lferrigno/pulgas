@@ -12,10 +12,6 @@ class AnuncianteForm extends BaseAnuncianteForm
 {
   public function configure()
   {
-  	$this->getWidget('sub_categorias_list')->setLabel('Sub Categor&iacute;as');
-  	$this->setValidator("sub_categorias_list", 
-  			new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'SubCategoria', 'required' => true)));
-	
-  	
+  	$this->useFields(array('nombre','direccion','localidad','telefono','email','web','facebook','anuncio'));
   }
 }

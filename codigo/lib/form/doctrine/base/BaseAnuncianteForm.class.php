@@ -22,6 +22,7 @@ abstract class BaseAnuncianteForm extends BaseFormDoctrine
       'telefono'            => new sfWidgetFormInputText(),
       'email'               => new sfWidgetFormInputText(),
       'web'                 => new sfWidgetFormInputText(),
+      'facebook'            => new sfWidgetFormInputText(),
       'anuncio'             => new sfWidgetFormTextarea(),
       'sub_categorias_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'SubCategoria')),
     ));
@@ -30,10 +31,11 @@ abstract class BaseAnuncianteForm extends BaseFormDoctrine
       'id'                  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'nombre'              => new sfValidatorString(array('max_length' => 150)),
       'direccion'           => new sfValidatorString(array('max_length' => 100)),
-      'localidad'           => new sfValidatorString(array('max_length' => 50)),
-      'telefono'            => new sfValidatorString(array('max_length' => 50)),
-      'email'               => new sfValidatorString(array('max_length' => 50)),
-      'web'                 => new sfValidatorString(array('max_length' => 150)),
+      'localidad'           => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'telefono'            => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'email'               => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'web'                 => new sfValidatorString(array('max_length' => 150, 'required' => false)),
+      'facebook'            => new sfValidatorString(array('max_length' => 150, 'required' => false)),
       'anuncio'             => new sfValidatorString(array('max_length' => 500)),
       'sub_categorias_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'SubCategoria', 'required' => false)),
     ));

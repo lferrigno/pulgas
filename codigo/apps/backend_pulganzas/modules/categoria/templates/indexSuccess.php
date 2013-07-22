@@ -1,5 +1,5 @@
 <h1>Categorias</h1>
-<a href="<?php echo url_for('categoria/new') ?>" class="btn btn-primary btn-nuevo">Nueva Categoria</a>
+
 
  <div class="span9">
     <table class="lista table table-hover table-bordered">

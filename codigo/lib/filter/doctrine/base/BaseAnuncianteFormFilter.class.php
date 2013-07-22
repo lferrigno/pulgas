@@ -15,10 +15,11 @@ abstract class BaseAnuncianteFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'nombre'              => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'direccion'           => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'localidad'           => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'telefono'            => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'email'               => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'web'                 => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'localidad'           => new sfWidgetFormFilterInput(),
+      'telefono'            => new sfWidgetFormFilterInput(),
+      'email'               => new sfWidgetFormFilterInput(),
+      'web'                 => new sfWidgetFormFilterInput(),
+      'facebook'            => new sfWidgetFormFilterInput(),
       'anuncio'             => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'sub_categorias_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'SubCategoria')),
     ));
@@ -30,6 +31,7 @@ abstract class BaseAnuncianteFormFilter extends BaseFormFilterDoctrine
       'telefono'            => new sfValidatorPass(array('required' => false)),
       'email'               => new sfValidatorPass(array('required' => false)),
       'web'                 => new sfValidatorPass(array('required' => false)),
+      'facebook'            => new sfValidatorPass(array('required' => false)),
       'anuncio'             => new sfValidatorPass(array('required' => false)),
       'sub_categorias_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'SubCategoria', 'required' => false)),
     ));
@@ -76,6 +78,7 @@ abstract class BaseAnuncianteFormFilter extends BaseFormFilterDoctrine
       'telefono'            => 'Text',
       'email'               => 'Text',
       'web'                 => 'Text',
+      'facebook'            => 'Text',
       'anuncio'             => 'Text',
       'sub_categorias_list' => 'ManyKey',
     );

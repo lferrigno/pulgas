@@ -7,7 +7,6 @@
 		<thead>
 			<tr>
 				<th>Nombre</th>
-				<th>Categor&iacute;a</th>
 				<th>Sub Categor&iacute;a</th>
 				<th>Acciones</th>
 			</tr>
@@ -17,8 +16,11 @@
 
 			<tr>
 				<td><?php echo $anunciante->getNombre() ?></td>
-				<td><?php echo $anunciante->getSubCategorias()->getFirst()->getCategoria()?></td>
-				<td><?php echo $anunciante->getSubCategorias()->getFirst() ?></td>
+				<td>
+				<?php foreach ($anunciante->getSubCategorias() as $sub):?>
+				<?php echo $sub." (".$sub->getCategoria().")"?>
+				<?php endforeach;?>
+				</td>
 				
 				<td><a
 					href="<?php echo url_for('anunciante/edit?id='.$anunciante->getId()) ?>">Editar</a>
