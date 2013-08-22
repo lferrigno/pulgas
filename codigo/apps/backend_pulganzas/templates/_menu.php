@@ -11,6 +11,16 @@
                     </ul>
                   </li>
                   <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Novedades
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="sub"><a href="<?php echo url_for('novedad/listadoRecetas') ?>">Recetas</a></li>
+                      <li class="sub"><a href="<?php echo url_for('novedad/listadoSorteos') ?>">Sorteos</a></li>
+                      <li class="sub"><a href="<?php echo url_for('novedad/listadoPulguitas') ?>">Pulguitas</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Otros
                         <b class="caret"></b>
                     </a>

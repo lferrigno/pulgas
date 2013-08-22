@@ -13,5 +13,7 @@ class AnuncianteForm extends BaseAnuncianteForm
   public function configure()
   {
   	$this->useFields(array('nombre','direccion','localidad','telefono','email','web','facebook','anuncio'));
+  	
+  	$this->widgetSchema['anuncio'] = new sfWidgetFormTextarea(array(), array('class' => 'no-editor'));
   }
 }

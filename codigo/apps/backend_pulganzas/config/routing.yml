@@ -9,6 +9,18 @@ homepage:
 anunciante:
   url:   /anunciante
   param: { module: anunciante,action: index }
+  
+newSorteo:
+  url:   /nuevoSorteo
+  param: { module: novedad,action: newSorteo }
+
+newPulguita:
+  url:   /nuevaPulguita
+  param: { module: novedad,action: newPulguita }
+
+newReceta:  
+  url:   /nuevaReceta
+  param: { module: novedad,action: newReceta }
 
 # generic rules
 # please, remove them by adding more specific rules

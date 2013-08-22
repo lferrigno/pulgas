@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css]
 
-  javascripts:    []
+  javascripts:    [ckeditor/ckeditor,/sfCkPlugin/js/sfCkPlugin.js]
 
   has_layout:     true
   layout:         layout

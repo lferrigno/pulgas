@@ -4,6 +4,32 @@ options:
   type: InnoDB
   
   
+Novedad:
+  columns:
+    titulo: {type: string(100), notnull: true}
+    texto: {type: clob, notnull: false}
+
+Sorteo:
+  inheritance:
+    extends: Novedad
+    type: column_aggregation
+    keyField: tipo
+    keyValue: Sorteo
+
+Receta:
+  inheritance:
+    extends: Novedad
+    type: column_aggregation
+    keyField: tipo
+    keyValue: Receta
+    
+Pulguita:
+  inheritance:
+    extends: Novedad
+    type: column_aggregation
+    keyField: tipo
+    keyValue: Pulguita
+  
 Categoria:
 #  actAs: [Timestampable, Signable, SoftDelete]
   columns:
