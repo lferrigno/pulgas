@@ -16,4 +16,11 @@ class SorteoTable extends NovedadTable
     {
         return Doctrine_Core::getTable('Sorteo');
     }
+    
+    public function getAllNewest(){
+    	$q = $this->createQuery('s')
+    	->where('1= 1')
+    	->orderBy('s.created_at DESC');
+    	return $q->execute();
+    }
 }

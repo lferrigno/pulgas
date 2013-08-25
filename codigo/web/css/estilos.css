@@ -353,7 +353,7 @@ p:hover {
 	width: 749px;
 }
 
-.btn-nuevo, .btn-nuevo:active,.btn-nuevo:focus,.btn-nuevo:hover {
+.btn-nuevo,.btn-nuevo:active,.btn-nuevo:focus,.btn-nuevo:hover {
 	float: right;
 	margin-right: 65px;
 	margin-bottom: 25px;
@@ -365,7 +365,53 @@ p:hover {
 	background-color: #FCE583;
 }
 
-
 form {
 	padding-bottom: 50px;
+}
+
+.encabezadoNovedad {
+	width: 100%;
+}
+
+.imgNovedad {
+	width: 30%;
+	float: left;
+	margin-right: 15px;
+}
+
+.tituloNovedad {
+	width: 68%;
+	float: left;
+	clear: right;
+	font-size: xx-large;
+	line-height: 110%;
+}
+
+.fechaNovedad {
+	width: 68%;
+	float: left;
+	clear: right;
+	font-size: x-small;
+	margin-bottom: 15px;
+}
+
+.textoNovedad {
+	padding-left: 5px;
+	clear: both;
+}
+
+.textoNovedad p,.textoNovedad p:hover {
+	font-size: 100%;
+	background: none;
+}
+
+.formLabel {
+	float: left;
+	margin: 5px;
+}
+
+.formControl {
+	float: left;
+	margin: 5px;
+}
 }

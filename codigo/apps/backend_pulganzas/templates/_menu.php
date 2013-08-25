@@ -15,9 +15,9 @@
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                      <li class="sub"><a href="<?php echo url_for('novedad/listadoRecetas') ?>">Recetas</a></li>
-                      <li class="sub"><a href="<?php echo url_for('novedad/listadoSorteos') ?>">Sorteos</a></li>
-                      <li class="sub"><a href="<?php echo url_for('novedad/listadoPulguitas') ?>">Pulguitas</a></li>
+                      <li class="sub"><a href="<?php echo url_for('receta/index') ?>">Recetas</a></li>
+                      <li class="sub"><a href="<?php echo url_for('sorteo/index') ?>">Sorteos</a></li>
+                      <li class="sub"><a href="<?php echo url_for('pulguita/index') ?>">Pulguitas</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">

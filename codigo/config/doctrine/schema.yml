@@ -5,30 +5,32 @@ options:
   
   
 Novedad:
+  actAs: [Timestampable]
   columns:
     titulo: {type: string(100), notnull: true}
     texto: {type: clob, notnull: false}
+    filename: {type: string(100), notnull: false}
 
 Sorteo:
   inheritance:
     extends: Novedad
     type: column_aggregation
     keyField: tipo
-    keyValue: Sorteo
+    keyValue: 'Sorteo'
 
 Receta:
   inheritance:
     extends: Novedad
     type: column_aggregation
     keyField: tipo
-    keyValue: Receta
+    keyValue: 'Receta'
     
 Pulguita:
   inheritance:
     extends: Novedad
     type: column_aggregation
     keyField: tipo
-    keyValue: Pulguita
+    keyValue: 'Pulguita'
   
 Categoria:
 #  actAs: [Timestampable, Signable, SoftDelete]

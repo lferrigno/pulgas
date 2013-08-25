@@ -75,5 +75,10 @@ SubCategoria:
   sub_categoria_7_2:
     Categoria: categoria_7
     nombre: Hogar 2
+    
+Sorteo:
+  sorteo1:
+    titulo: 'lalal'
+    texto: 'miuada  asd asda'
 
   
