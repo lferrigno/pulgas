@@ -12,7 +12,7 @@ class NovedadForm extends BaseNovedadForm
 {
   public function configure()
   {
-  	$this->useFields(array('titulo','texto','filename'));
+  	$this->useFields(array('titulo','resumen','texto','filename'));
   	
 
   	$this->widgetSchema['filename'] = new sfWidgetFormInputFileEditable(array(
@@ -38,5 +38,7 @@ class NovedadForm extends BaseNovedadForm
 		$this->widgetSchema->setLabel('filename', ' ');
 		
 		$this->widgetSchema->setLabel('texto', ' ');
+		$this->widgetSchema->setLabel('resumen', 'Resumen');
+		
   }
 }

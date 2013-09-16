@@ -5,6 +5,47 @@
 homepage:
   url:   /
   param: { module: default, action: index }
+  
+  
+novedades:
+  url:   /novedades
+  param: { module: novedades, action: index }
+
+novedades_sorteo:
+  url:   /novedades/sorteo/:id
+  param: { module: novedades, action: sorteo }
+  requirements:
+    id: \d+
+
+novedades_show_sorteo:
+  url:   /novedades/show/sorteo/:id
+  param: { module: novedades, action: showSorteo }
+  requirements:
+    id: \d+
+
+novedades_receta:
+  url:   /novedades/receta/:id
+  param: { module: novedades, action: receta }
+  requirements:
+    id: \d+
+
+novedades_show_receta:
+  url:   /novedades/show/receta/:id
+  param: { module: novedades, action: showReceta }
+  requirements:
+    id: \d+
+
+novedades_pulguita:
+  url:   /novedades/pulguita/:id
+  param: { module: novedades, action: pulguita }
+  requirements:
+    id: \d+
+
+novedades_show_pulguita:
+  url:   /novedades/show/pulguita/:id
+  param: { module: novedades, action: showPulguita }
+  requirements:
+    id: \d+
 
 # generic rules
 # please, remove them by adding more specific rules

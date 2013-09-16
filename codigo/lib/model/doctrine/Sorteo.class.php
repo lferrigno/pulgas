@@ -12,4 +12,5 @@
  */
 class Sorteo extends BaseSorteo
 {
+	
 }

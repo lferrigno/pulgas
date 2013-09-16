@@ -33,4 +33,20 @@ class NovedadTable extends Doctrine_Table
     	->where('n.tipo= ?', "Pulguita");
     	return $q->execute();
     }
+    
+    public function getAllNewest($limit = null){
+    	$q = $this->createQuery('s')
+    	->where('1= 1')
+    	->orderBy('s.created_at DESC');
+    	if($limit)
+    		$q->limit($limit);
+    	return $q->execute();
+    }
+    
+    public function obtenerUltimo(){
+    	$q = $this->createQuery('r')
+    	->where('1= 1')
+    	->orderBy('r.created_at DESC');
+    	return $q->fetchOne();
+    }
 }

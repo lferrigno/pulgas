@@ -17,10 +17,4 @@ class PulguitaTable extends NovedadTable
         return Doctrine_Core::getTable('Pulguita');
     }
     
-    public function getAllNewest(){
-    	$q = $this->createQuery('p')
-    	->where('1= 1')
-    	->orderBy('p.created_at DESC');
-    	return $q->execute();
-    }
 }

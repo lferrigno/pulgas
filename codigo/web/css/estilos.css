@@ -286,8 +286,19 @@ p:hover {
 	height: 220px;
 	margin-top: 20px;
 }
+.section_content_old {
+    margin: 15px;
+    padding: 0;
+    width: 450px;;
+}
 
 .section_content img {
+	float: left;
+	margin-left: 10px;
+	width: 250px;
+}
+
+.section_content_old img {
 	float: left;
 	margin-left: 10px;
 	width: 250px;
@@ -320,6 +331,14 @@ p:hover {
 	margin-left: 10px;
 	margin-top: 10px;
 	width: 600px;
+}
+.section_content_title {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 600px;
+	color: #30AD78;
+	font-size: 140%;	
 }
 
 .separador {
@@ -401,6 +420,38 @@ form {
 }
 
 .textoNovedad p,.textoNovedad p:hover {
+	font-size: 100%;
+	background: none;
+}
+.textoSeccionNovedad {
+	padding-left: 5px;
+}
+
+.textoSeccionNovedad p,.textoSeccionNovedad p:hover {
+	font-size: 100%;
+	background: none;
+}
+
+.textoSeccionNovedadAntigua {
+	padding-left: 5px;
+}
+
+.textoSeccionNovedadAntigua p,.textoSeccionNovedadAntigua p:hover {
+	font-size: 100%;
+	background: none;
+}
+.section_content_text_old {
+	clear: left;
+	height: 170px;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 250px;
+}
+.textoSeccionNovedad {
+	padding-left: 5px;
+}
+
+.textoSeccionNovedad p,.textoSeccionNovedad p:hover {
 	font-size: 100%;
 	background: none;
 }

@@ -17,10 +17,7 @@ class RecetaTable extends NovedadTable
         return Doctrine_Core::getTable('Receta');
     }
     
-    public function getAllNewest(){
-    	$q = $this->createQuery('r')
-    	->where('1= 1')
-    	->orderBy('r.created_at DESC');
-    	return $q->execute();
-    }
+    
+
+    
 }

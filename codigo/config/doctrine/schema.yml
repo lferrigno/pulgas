@@ -8,6 +8,7 @@ Novedad:
   actAs: [Timestampable]
   columns:
     titulo: {type: string(100), notnull: true}
+    resumen: {type: clob, notnull: false}
     texto: {type: clob, notnull: false}
     filename: {type: string(100), notnull: false}
 
