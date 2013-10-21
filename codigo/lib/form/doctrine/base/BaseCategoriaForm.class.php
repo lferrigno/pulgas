@@ -17,11 +17,13 @@ abstract class BaseCategoriaForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'     => new sfWidgetFormInputHidden(),
       'nombre' => new sfWidgetFormInputText(),
+      'codigo' => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'nombre' => new sfValidatorString(array('max_length' => 150)),
+      'codigo' => new sfValidatorString(array('max_length' => 150)),
     ));
 
     $this->widgetSchema->setNameFormat('categoria[%s]');

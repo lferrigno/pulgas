@@ -22,4 +22,10 @@ class SubCategoriaTable extends Doctrine_Table
     	->where('sc.categoria_id = ?', $categoriaId);
     	return $q->execute();
     }
+    public function getByCodigoCategoria($codigo) {
+    	$q = $this->createQuery('sc')
+    	->innerJoin('sc.Categoria c')
+    	->where('c.codigo LIKE ?', $codigo);
+    	return $q->execute();
+    }
 }

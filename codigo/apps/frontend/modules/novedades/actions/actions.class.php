@@ -19,7 +19,7 @@ class novedadesActions extends sfActions
 	{
 		$this->ultimaReceta = RecetaTable::getInstance()->obtenerUltimo();
 		$this->ultimoSorteo =SorteoTable::getInstance()->obtenerUltimo();
-		$this->ultimaPulguita = PulguitaTable::getInstance()->obtenerUltimo();
+		$this->ultimaGaleria = GaleriaTable::getInstance()->obtenerUltimo();
 	}
 
 	public function executeSorteo(sfWebRequest $request)
@@ -76,6 +76,17 @@ class novedadesActions extends sfActions
 		
 		$this->urlShowNovedad = 'novedades_show_pulguita';
 		$this->setTemplate('novedad');
+	}
+	public function executeGaleria(sfWebRequest $request)
+	{
+		$this->forward404Unless($galeria = Doctrine_Core::getTable('Galeria')->find(array($request->getParameter('id'))), sprintf('Object galeria does not exist (%s).', $request->getParameter('id')));
+		$this->galeria = $galeria;
+		$this->ultimosMsg = "Últimas Galerias";
+		$this->tituloNovedad = "GALERIA";
+		$limit = 12;
+		$this->galerias = GaleriaTable::getInstance()->getAllNewest($limit);
+	
+		$this->urlShowNovedad = 'novedades_show_pulguita';
 	}
 
 	public function executeShowPulguita(sfWebRequest $request)

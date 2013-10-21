@@ -16,4 +16,17 @@ class AnuncianteTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Anunciante');
     }
+    
+
+    public function getWhereQuery($wheres)
+    {
+    	$q = $this->createQuery('a')
+    	->where('1 = 1');
+    
+    	foreach($wheres as $where){
+    		$q->andWhere($where);
+    	}
+    	 
+    	return $q;
+    }
 }

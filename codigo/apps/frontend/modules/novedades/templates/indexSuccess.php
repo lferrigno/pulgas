@@ -7,7 +7,7 @@
 <?php include_partial('novedad', array('nombreEncabezado' => "RECETAS","elemento"=>$ultimaReceta,"urlVer"=>url_for('novedades/receta?id='.$ultimaReceta->getId()))) ?>
 <?php endif;?>
 
-<?php if ($ultimaPulguita):?>
+<?php if ($ultimaGaleria):?>
 <div  class="separador"></div>
- <?php include_partial('novedad', array('nombreEncabezado' => "GALERIA","elemento"=>$ultimaPulguita,"urlVer"=>url_for('novedades/pulguita?id='.$ultimaPulguita->getId()))) ?>
+ <?php include_partial('galeria', array('nombreEncabezado' => "GALERIA","elemento"=>$ultimaGaleria,"urlVer"=>url_for('novedades/galeria?id='.$ultimaGaleria->getId()))) ?>
 <?php endif;?>

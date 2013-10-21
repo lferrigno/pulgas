@@ -32,11 +32,30 @@ Pulguita:
     type: column_aggregation
     keyField: tipo
     keyValue: 'Pulguita'
-  
+
+Galeria:
+  actAs: [Timestampable]
+  columns:
+    titulo: {type: string(100), notnull: true}
+
+GaleriaFoto:
+  columns:
+    galeria_id:     { type: integer }
+    filename:       { type: string(255) }
+  relations:
+    Galeria:
+      alias:        Galeria
+      local: galeria_id
+      foreign: id
+      foreignType:  many
+      foreignAlias: Fotos
+      onDelete:     cascade    
+
 Categoria:
 #  actAs: [Timestampable, Signable, SoftDelete]
   columns:
     nombre: {type: string(150), notnull: true}
+    codigo: {type: string(150), notnull: true}
     
 SubCategoria:
 #  actAs: [Timestampable, Signable, SoftDelete]
@@ -66,7 +85,6 @@ Anunciante:
     web: {type: string(150), notnull: false}
     facebook: {type: string(150), notnull: false}
     anuncio: {type: string(500), notnull: true}
-    
   relations:
     SubCategorias:
       class: SubCategoria

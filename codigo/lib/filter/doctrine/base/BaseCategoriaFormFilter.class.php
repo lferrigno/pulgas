@@ -14,10 +14,12 @@ abstract class BaseCategoriaFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'nombre' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'codigo' => new sfWidgetFormFilterInput(array('with_empty' => false)),
     ));
 
     $this->setValidators(array(
       'nombre' => new sfValidatorPass(array('required' => false)),
+      'codigo' => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('categoria_filters[%s]');
@@ -39,6 +41,7 @@ abstract class BaseCategoriaFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'     => 'Number',
       'nombre' => 'Text',
+      'codigo' => 'Text',
     );
   }
 }
