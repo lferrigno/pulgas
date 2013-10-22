@@ -38,7 +38,7 @@ class anunciantesActions extends sfActions
 			$filters = $this->getUser()->getAttribute('filtro');
 			$query = $this->getQueryBusqueda($filters);
 		}
-		$this->pager = new sfDoctrinePager('Anunciante', 1);
+		$this->pager = new sfDoctrinePager('Anunciante', 6);
 		$this->pager->setQuery($query);
 		$this->pager->setPage($request->getParameter('page', 0));
 		$this->pager->init();
@@ -68,15 +68,16 @@ class anunciantesActions extends sfActions
 	{
 		$params = $request->getGetParameters();
 		$tipo = $params['tipo'];
-	
-// 		$categoriaFormFilter = $categoria .'FormFilter';
-// 		$r = new ReflectionClass($categoriaFormFilter);
-// 		$formFilterAntecedente = $r->newInstanceArgs();
-		 
-// 		$formDocumentacion = $formFilterAntecedente->getDocumentacionDocenteAntecedenteFormAsociado();
-// 		$formDocumentacion->inicializar();
 		return $this->renderPartial('listadoAnunciantes', array('nombreEncabezado'  	=> $tipo,
 		));
 	}
 	
+	public function executeAsyncCargarAnuncio(sfWebRequest $request)
+	{
+		$params = $request->getGetParameters();
+		$anuncioId = $params['anuncioId'];
+		$anunciante = AnuncianteTable::getInstance()->findOneBy('id',$anuncioId);
+		return $this->renderPartial('anunciante', array('anunciante'  	=> $anunciante
+		));
+	}
 }

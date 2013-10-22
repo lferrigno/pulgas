@@ -1,6 +1,17 @@
 <?php use_helper('Pagination')?>
 <script>
 
+function abrirAnuncio(id){
+
+    $('#modalAnuncio').load(
+            "<?php echo url_for('anunciantes/asyncCargarAnuncio')?>",
+            "anuncioId=" + id,function() {
+            	$('#myModal').modal();
+            });
+	
+
+}
+
 function limpiarTodos(){
 	$(".linkTrigger").each(function(index) {
 		 $(this).css( "background-color", "white" ) ;
@@ -41,31 +52,24 @@ function cargarlistado_subCategoriasAjax(tipo){
 </div>
 <div class="separador"></div>
 Buscador de anunciantes
-<form id="form_filter" 	action="<?php echo url_for('anunciantes/index'); ?>" method="post"><input
+<div class="row">
+	<div class="span5">
+		<form class="form-horizontal" id="form_filter" 	action="<?php echo url_for('anunciantes/index'); ?>" method="post"><input
 	type="hidden" id="page" value="0" name="page" />
 <?php echo $filtro->renderHiddenFields()?> 
 
-<div class="fila">
-	<div class="floatLeft margenDerecho">
-		<?php echo $filtro['nombre']->renderLabel() ?>
-		<?php echo $filtro['nombre'] ?>
-		<?php echo $filtro['nombre']->renderError() ?>
-	</div>
-<div class="floatLeft margenDerecho">
-		<?php echo $filtro['rubro']->renderLabel() ?>
-		<?php echo $filtro['rubro'] ?>
-		<?php echo $filtro['rubro']->renderError() ?>
-	</div>
-	<div class="floatLeft margenDerecho">
-		<?php echo $filtro['categoria']->renderLabel() ?>
-		<?php echo $filtro['categoria'] ?>
-		<?php echo $filtro['categoria']->renderError() ?>
-	</div>
-	</div>
-	<div class="clear"></div>
-	<div><input type="submit" value="Buscar" /></div>
+<?php include_partial("global/simpleFormField",array("form"=>$filtro,"field"=>"nombre"));?>
+	<?php include_partial("global/simpleFormField",array("form"=>$filtro,"field"=>"rubro"));?>
+	<?php include_partial("global/simpleFormField",array("form"=>$filtro,"field"=>"categoria"));?>
+	<div class="control-group">
+				<div class="controls">
+					<button type="submit" class="btn">Buscar</button>
+				</div>
+			</div>
 
 </form>
+</div>
+</div>
 <div style="clear: both"></div>
 	<div id="menu_anunciantes_box_solo">
 		<div id="menu_anunciantes_box_centro_solo">
@@ -89,66 +93,21 @@ Buscador de anunciantes
 
 	</div>
 	<div style="clear: both"></div>
-	<div class="listado_subCategorias" id="listado_subCategorias_itemEducacion">
-		<ul>
-		<?php foreach($educacion as $item):?>
-	  		<li><?php echo $item?></li>
-	 	<?php endforeach;?>
-		</ul>
-	</div>
-	<div class="listado_subCategorias" id="listado_subCategorias_itemHogar">
-		<ul>
-		<?php foreach($hogar as $item):?>
-	  		<li><?php echo $item?></li>
-	 	<?php endforeach;?>
-		</ul>
-	</div>
-
-	<div class="listado_subCategorias" id="listado_subCategorias_itemNinos">
-		<ul>
-		<?php foreach($ninos as $item):?>
-	  		<li><?php echo $item?></li>
-	 	<?php endforeach;?>
-		</ul>
-	</div>
-
-	<div class="listado_subCategorias" id="listado_subCategorias_itemOtros">
-		<ul>
-		<?php foreach($otros as $item):?>
-	  		<li><?php echo $item?></li>
-	 	<?php endforeach;?>
-		</ul>
-	</div>
-	<div class="listado_subCategorias" id="listado_subCategorias_itemFiestas">
-	<ul>
-  	<?php foreach($fiestas as $item):?>
-  <li><?php echo $item?></li>
-  <?php endforeach;?>
-</ul>
-	</div>
-
-	<div class="listado_subCategorias" id="listado_subCategorias_itemSalud">
-		<ul>
-		<?php foreach($salud as $item):?>
-	  		<li><?php echo $item?></li>
-	 	<?php endforeach;?>
-		</ul>
-	</div>
-
-	<div class="listado_subCategorias" id="listado_subCategorias_itemEstetica">
-		<ul>
-		<?php foreach($estetica as $item):?>
-	  		<li><?php echo $item?></li>
-	 	<?php endforeach;?>
-		</ul>
-	</div>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemEducacion","group"=>$educacion)) ?>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemHogar","group"=>$hogar)) ?>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemNinos","group"=>$ninos)) ?>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemOtros","group"=>$otros)) ?>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemFiestas","group"=>$fiestas)) ?>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemSalud","group"=>$salud)) ?>
+	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemEstetica","group"=>$estetica)) ?>
+	
 	
 	<div style="clear: both"></div>
 <?php $anuncios = $pager->getResults();
 if  ($anuncios->count() !=0) : ?>
 <?php foreach ($anuncios as $anuncio):?>
 <div class="section_content">
-			<a href="#"><?php echo image_tag("../uploads/anunciantes/".$anuncio->getFotos()->getFirst()->getFilename()
+			<a href="javascript:abrirAnuncio('<?php echo $anuncio->getId()?>')"><?php echo image_tag("../uploads/anunciantes/".$anuncio->getFotos()->getFirst()->getFilename()
 					,array()) ?></a>
 						<div class="section_content_title"><?php echo $anuncio->getNombre()?></div>
 		</div>
@@ -160,5 +119,10 @@ if  ($anuncios->count() !=0) : ?>
 No hay resultados
 <?php endif;?>
 
+
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div id="modalAnuncio"></div>
+</div>
 
 <div style="clear: both"></div>
