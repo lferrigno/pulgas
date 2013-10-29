@@ -1,7 +1,9 @@
-<?php include_partial('novedad', array('nombreEncabezado' => $tituloNovedad,"elemento"=>$novedad,"urlVer"=>url_for($urlShowNovedad,array('id'=>$novedad->getId())))) ?>
+<div class="tituloSeccion seccionNovedades">Novedades</div>
+
+<?php include_partial('novedadUltima', array('nombreEncabezado' => $tituloNovedad,"elemento"=>$novedad,"urlVer"=>url_for($urlShowNovedad,array('id'=>$novedad->getId())))) ?>
 <div class="separador"></div>
 
-<div style="margin: 20px">
+<div style="margin: auto">
 <div class="subtitulo"><?php echo $ultimosMsg?></div>
 
 <?php foreach ($novedades as $proximaNovedad):?>

@@ -1,3 +1,5 @@
+<div class="tituloSeccion seccionNovedades">Novedades</div>
+
 <?php if ($ultimoSorteo):?>
 <?php include_partial('novedad', array('nombreEncabezado' => "SORTEOS","elemento"=>$ultimoSorteo,"urlVer"=>url_for('novedades/sorteo?id='.$ultimoSorteo->getId()))) ?>
 <?php endif;?>
@@ -11,3 +13,4 @@
 <div  class="separador"></div>
  <?php include_partial('galeria', array('nombreEncabezado' => "GALERIA","elemento"=>$ultimaGaleria,"urlVer"=>url_for('novedades/galeria?id='.$ultimaGaleria->getId()))) ?>
 <?php endif;?>
+<div style="clear: both;"></div>

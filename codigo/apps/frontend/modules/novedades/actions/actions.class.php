@@ -54,6 +54,7 @@ class novedadesActions extends sfActions
 		$this->forward404Unless($sorteo = Doctrine_Core::getTable('Sorteo')->find(array($request->getParameter('id'))), sprintf('Object sorteo does not exist (%s).', $request->getParameter('id')));
 		$this->novedad = $sorteo;
 		$this->urlVolver = $this->generateUrl('novedades_sorteo',array('id'=>$sorteo->getId()));
+		$this->nombreEncabezado = "Sorteo";
 		$this->setTemplate('show');
 	}
 	
@@ -62,6 +63,7 @@ class novedadesActions extends sfActions
 		$this->forward404Unless($receta = Doctrine_Core::getTable('Receta')->find(array($request->getParameter('id'))), sprintf('Object sorteo does not exist (%s).', $request->getParameter('id')));
 		$this->novedad = $receta;
 		$this->urlVolver = $this->generateUrl('novedades_receta',array('id'=>$receta->getId()));
+		$this->nombreEncabezado = "Receta";
 		$this->setTemplate('show');
 	}
 	

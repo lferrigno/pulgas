@@ -15,4 +15,8 @@ class Novedad extends BaseNovedad
 	public function getTextoReducido(){
 		return substr($this->getTexto(), 0,300);
 	}
+	
+	public function puedeVerMas(){
+	return true;	
+	}
 }

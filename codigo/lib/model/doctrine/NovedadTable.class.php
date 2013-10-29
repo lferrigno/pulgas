@@ -38,8 +38,10 @@ class NovedadTable extends Doctrine_Table
     	$q = $this->createQuery('s')
     	->where('1= 1')
     	->orderBy('s.created_at DESC');
-    	if($limit)
+    	if($limit){
     		$q->limit($limit);
+    		$q->offset(1);
+    	}
     	return $q->execute();
     }
     

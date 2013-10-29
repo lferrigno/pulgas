@@ -25,7 +25,7 @@ class NovedadForm extends BaseNovedadForm
   	
   	$this->validatorSchema['filename'] = new sfValidatorFile(array(
   			'required' => $this->isNew(), // obrigatorio somente se novo registro
-  			'max_size' => 500000,
+  			'max_size' => 5000000,
   			'mime_types' => 'web_images',
   			'required' => false,
   			'path' => sfConfig::get('sf_upload_dir').'/novedades'

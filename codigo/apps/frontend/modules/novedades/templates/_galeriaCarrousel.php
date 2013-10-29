@@ -3,9 +3,10 @@
 <div class="section_header_text"><?php echo $nombreEncabezado?></div>
 <div class="section_header_der"></div>
 
-
 </div>
 <?php if($galeria && $galeria->getFotos()->count() >0):?>
+<div style="margin: 10px" class="section_content_title_ultima"><?php echo $galeria->getTitulo()?></div>
+<div style="clear: both;"></div>
 <div id="myCarouselGaleria" class="carousel slide">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarouselGaleria" data-slide-to="0" class="active"></li>

@@ -47,11 +47,9 @@ function cargarlistado_subCategoriasAjax(tipo){
 
 </script>
 
-<div style="clear: both"></div>
-<div class="titulo_buscador">Anunciantes
-</div>
-<div class="separador"></div>
-Buscador de anunciantes
+<div class="tituloSeccion seccionAnunciantes">Anunciantes</div>
+
+<div class="tituloBuscador">Buscador de anunciantes</div>
 <div class="row">
 	<div class="span5">
 		<form class="form-horizontal" id="form_filter" 	action="<?php echo url_for('anunciantes/index'); ?>" method="post"><input
@@ -70,7 +68,10 @@ Buscador de anunciantes
 </form>
 </div>
 </div>
-<div style="clear: both"></div>
+
+<div style="clear: both" class="tituloSeccion seccionAnunciantes"></div>
+<div class="seccionCategorias ">Categor&iacute;as</div>
+
 	<div id="menu_anunciantes_box_solo">
 		<div id="menu_anunciantes_box_centro_solo">
 			<ul>
@@ -102,9 +103,13 @@ Buscador de anunciantes
 	 <?php include_partial('listadoAnunciantes', array('nombreItem' => "listado_subCategorias_itemEstetica","group"=>$estetica)) ?>
 	
 	
-	<div style="clear: both"></div>
+	<div style="clear: both" ></div>
 <?php $anuncios = $pager->getResults();
 if  ($anuncios->count() !=0) : ?>
+	<div style="clear: both" class="tituloSeccion seccionAnunciantes"></div>
+
+<div class="seccionCategorias ">Resultados</div>
+
 <?php foreach ($anuncios as $anuncio):?>
 <div class="section_content">
 			<a href="javascript:abrirAnuncio('<?php echo $anuncio->getId()?>')"><?php echo image_tag("../uploads/anunciantes/".$anuncio->getFotos()->getFirst()->getFilename()
