@@ -439,7 +439,6 @@ p:hover {
 }
 
 #myCarouselAnuncio {
-	height: 350px;
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 15px;
@@ -452,8 +451,8 @@ p:hover {
 }
 
 .imgCarouselAnuncio {
-	margin-left: 40px;
-	margin-right: 40px;
+	margin:auto;
+	padding: auto;
 	max-width: 460px;
 	height: 250px;
 }
@@ -648,4 +647,21 @@ form {
 	font-size: 30pt;
 	margin: 19px;
 	padding-bottom: 15px;
+}
+
+.innerContent{
+	margin:19px;
+}
+
+.btnFiltro{
+	margin-top: 22px;
+}
+
+.row-fluid{
+	margin-top:15px;
+}
+
+.formBusqueda{
+	margin: 0px;
+	padding: 0px;
 }

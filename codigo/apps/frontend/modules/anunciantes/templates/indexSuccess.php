@@ -50,23 +50,31 @@ function cargarlistado_subCategoriasAjax(tipo){
 <div class="tituloSeccion seccionAnunciantes">Anunciantes</div>
 
 <div class="tituloBuscador">Buscador de anunciantes</div>
-<div class="row">
-	<div class="span5">
-		<form class="form-horizontal" id="form_filter" 	action="<?php echo url_for('anunciantes/index'); ?>" method="post"><input
+<div class="row-fluid innerContent">
+		<form class="form-horizontal formBusqueda" id="form_filter" 	action="<?php echo url_for('anunciantes/index'); ?>" method="post"><input
 	type="hidden" id="page" value="0" name="page" />
 <?php echo $filtro->renderHiddenFields()?> 
-
-<?php include_partial("global/simpleFormField",array("form"=>$filtro,"field"=>"nombre"));?>
-	<?php include_partial("global/simpleFormField",array("form"=>$filtro,"field"=>"rubro"));?>
-	<?php include_partial("global/simpleFormField",array("form"=>$filtro,"field"=>"categoria"));?>
-	<div class="control-group">
-				<div class="controls">
-					<button type="submit" class="btn">Buscar</button>
-				</div>
-			</div>
+<div class="row-fluid">   
+            <div class="span5">
+              <?php echo $filtro['nombre']->renderLabel()?>
+              <?php echo $filtro['nombre']->render(array("class"=>"span12"))?>           
+            </div><!--/span-->
+                        <div class="span5">
+              <?php echo $filtro['rubro']->renderLabel()?>
+              <?php echo $filtro['rubro']->render(array("class"=>"span12"))?>           
+            </div><!--/span-->
+          </div><!--/row-->
+<div class="row-fluid">   
+            <div class="span5">
+              <?php echo $filtro['categoria']->renderLabel()?>
+              <?php echo $filtro['categoria']->render(array("class"=>"span12"))?>           
+            </div><!--/span-->
+                        <div class="span5">
+					<button type="submit" class="btn btn-success btnFiltro">Buscar</button>
+                        </div><!--/span-->
+          </div><!--/row-->
 
 </form>
-</div>
 </div>
 
 <div style="clear: both" class="tituloSeccion seccionAnunciantes"></div>
@@ -115,6 +123,17 @@ if  ($anuncios->count() !=0) : ?>
 			<a href="javascript:abrirAnuncio('<?php echo $anuncio->getId()?>')"><?php echo image_tag("../uploads/anunciantes/".$anuncio->getFotos()->getFirst()->getFilename()
 					,array()) ?></a>
 						<div class="section_content_title"><?php echo $anuncio->getNombre()?></div>
+						<div class="section_content_text">
+						<?php echo $anuncio->getDireccion()?> - <?php echo $anuncio->getLocalidad()?>
+						<br />
+						Telefono: <?php echo $anuncio->getTelefono()? $anuncio->getTelefono() : " - "?>
+						<br />
+						Email: <?php echo $anuncio->getEmail()? $anuncio->getEmail() : " - "?>
+						<br />
+						Web: <?php echo $anuncio->getWeb()? $anuncio->getWeb() : " - "?>
+						<br />
+						Facebook: <?php echo $anuncio->getFacebook()? $anuncio->getFacebook() : " - "?>
+						</div>
 		</div>
 <?php endforeach;?>
 <div style="align: center;">

@@ -23,12 +23,15 @@ class GaleriaTable extends Doctrine_Table
 		return $q->fetchOne();
 	}
 
-	public function getAllNewest($limit = null){
+	public function getAllNewest($limit = null, $ultimaFecha){
 		$q = $this->createQuery('g')
 		->where('1 = 1')
+		->andWhere('g.created_at <= ?',$ultimaFecha)
 		->orderBy('g.created_at DESC');
-		if($limit)
+		if($limit){
 			$q->limit($limit);
+			$q->offset(1);
+		}
 		return $q->execute();
 	}
 }

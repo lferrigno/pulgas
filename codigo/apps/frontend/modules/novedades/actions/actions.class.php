@@ -83,10 +83,10 @@ class novedadesActions extends sfActions
 	{
 		$this->forward404Unless($galeria = Doctrine_Core::getTable('Galeria')->find(array($request->getParameter('id'))), sprintf('Object galeria does not exist (%s).', $request->getParameter('id')));
 		$this->galeria = $galeria;
-		$this->ultimosMsg = "Últimas Galerias";
+		$this->ultimosMsg = "Galería anterior";
 		$this->tituloNovedad = "GALERIA";
-		$limit = 12;
-		$this->galerias = GaleriaTable::getInstance()->getAllNewest($limit);
+		$limit = 1;
+		$this->galerias = GaleriaTable::getInstance()->getAllNewest($limit,$this->galeria->getCreatedAt());
 	
 		$this->urlShowNovedad = 'novedades_show_pulguita';
 	}
