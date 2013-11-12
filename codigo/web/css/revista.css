@@ -1,0 +1,39 @@
+
+#unicaRevistaOnline {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: auto;
+	margin:auto;
+	left: auto;
+	border: none;
+	background-color: transparent;
+}
+
+
+#unicaRevistaOnlineContent{
+	margin: 0;
+	padding: 0;
+}
+.modalRevista{
+	height: 100%;
+		width: auto;
+	margin:auto;
+}
+
+#imagenRevistaActual{
+	height: 90%;
+		width: auto;
+	margin:auto;
+}
+
+.botoneraRevista{
+		height: 10%;
+		background-color: black;
+		width: auto;
+	margin:auto;
+}
+
+#revista_irA{
+	width: 20px;
+}

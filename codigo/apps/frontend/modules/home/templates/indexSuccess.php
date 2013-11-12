@@ -1,3 +1,14 @@
+<script type="text/javascript">
+function abrirRevista(id){
+    $('#unicaRevistaOnlineContent').load(
+            "<?php echo url_for('revista/asyncCargarRevista')?>",
+            "revistaId=" + id+"&actual=0",function() {
+            	$('#unicaRevistaOnline').modal();
+            });
+}
+
+
+</script>
 	<div id="myCarousel" class="carousel slide">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -109,7 +120,7 @@
 		<div class="box_header_label"></div>
 
 		<div class="box_content">
-			<a class="view_more_left" href="#"> <?php echo image_tag('boton_verMas.png',array()) ?>
+			<a class="view_more_left" href="javascript:abrirRevista(<?php echo $ultimaRevista->getId()?>)"> <?php echo image_tag('boton_verMas.png',array()) ?>
 			</a>
 			<?php echo image_tag('revista_online.png',array()) ?>
 		</div>

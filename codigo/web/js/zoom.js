@@ -56,7 +56,12 @@
 					} else if (bgPosY < height - bgHeight) {
 						bgPosY = height - bgHeight;
 					}
-
+					
+//					img.bgSizeBefore = img.style.backgroundSize;
+//					img.bgPositionBefore = img.style.backgroundPosition;
+//					img.bgSizeAfter = img.style.backgroundSize;
+//					img.bgPositionAfter = img.style.backgroundPosition;
+//					
 					img.style.backgroundSize = bgWidth + 'px ' + bgHeight + 'px';
 					img.style.backgroundPosition = (bgPosX+offsetPaddingX) + 'px ' + (bgPosY+offsetPaddingY) + 'px';
 				}

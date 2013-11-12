@@ -14,6 +14,10 @@
 
 		<?php include_partial("global/menu");?>
 		<?php echo $sf_content ?>
+	<div id="unicaRevistaOnline" class="modal hide fade" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div id="unicaRevistaOnlineContent"></div>
+</div>
 	</div>
 	<div id="footer">
 		<div></div>

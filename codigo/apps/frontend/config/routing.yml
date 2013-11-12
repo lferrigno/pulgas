@@ -50,6 +50,12 @@ novedades_show_pulguita:
   requirements:
     id: \d+
 
+ver_revista:
+  url:   /revista/ver/:id
+  param: { module: revista, action: ver }
+  requirements:
+    id: \d+
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:

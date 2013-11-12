@@ -120,3 +120,25 @@ AnuncianteFoto:
       foreignType:  many
       foreignAlias: Fotos
       onDelete:     cascade      
+
+      
+
+Revista:
+  actAs: [Timestampable]
+  columns:
+    titulo: {type: string(100), notnull: true}
+
+RevistaFoto:
+  columns:
+    revista_id:     { type: integer }
+    filename:       { type: string(255) }
+    nombre_original:       { type: string(255) }
+    orden:     { type: integer }
+  relations:
+    Revista:
+      alias: Revista
+      local: revista_id
+      foreign: id
+      foreignType:  many
+      foreignAlias: Fotos
+      onDelete:     cascade   
