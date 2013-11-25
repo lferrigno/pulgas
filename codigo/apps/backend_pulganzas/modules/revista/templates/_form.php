@@ -31,10 +31,10 @@
 		</div>
 	</div>
 </form>
-	<div class="span3 offset1">
+	<div class="span3">
 		<?php if(!$form->getObject()->isNew()):?>
 		<?php if ($form->getObject()->getFotos()->count() >0):?>
-		Listado de imagenes ya cargadas
+		<h5>Listado de imagenes ya cargadas</h5>
 		
 		
 <div class="span9">

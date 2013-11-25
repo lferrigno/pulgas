@@ -65,17 +65,17 @@ class anuncianteActions extends sfActions
 		$subCategoriaAnunciante = $request->getPostParameter('sub_categoria_anunciante',null);
 		$subCategoriaId = $subCategoriaAnunciante['sub_categoria_id'];
 		$this->forward404Unless($subCategoriaId != null, sprintf('Object sub_categoria does not exist'));
-		
+
 		$this->form = new AnuncianteForm($anunciante);
 		$this->fotoForm = new AnuncianteConFotoForm($anunciante);
 		$this->categoriaAnuncianteForm = new SubCategoriaAnuncianteForm();
 		//   	$this->fotoForm = new AnuncianteConFotoForm($anunciante);
-	
+
 		$this->saveSubCategoria($request,$subCategoriaId, $anunciante->getId(),$this->categoriaAnuncianteForm);
-	
+
 		$this->setTemplate('edit');
 	}
-	
+
 
 	public function executeUpdate(sfWebRequest $request)
 	{
@@ -178,5 +178,20 @@ class anuncianteActions extends sfActions
 		return $this->renderText(json_encode($categoriasAux));
 	}
 
+	public function executeEliminarSubCategoria(sfWebRequest $request) {
+		$id = $request->getParameter('id');
+		$subCategoriaId = $request->getParameter('subcat');
+		$sca = SubCategoriaAnuncianteTable::getInstance()->getByAnuncioAndSubCategoria($id,$subCategoriaId);
+		$sca->delete();
+		$this->redirect('anunciante/edit?id='.$id);
+	}
+
+	public function executeEliminarFoto(sfWebRequest $request) {
+		$id = $request->getParameter('id');
+		$foto = $request->getParameter('foto');
+		$anuncioFoto = AnuncianteFotoTable::getInstance()->findOneBy('id',$foto);
+		$anuncioFoto->delete();
+		$this->redirect('anunciante/edit?id='.$id);
+	}
 
 }

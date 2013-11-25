@@ -17,17 +17,15 @@
                     <ul class="dropdown-menu">
                       <li class="sub"><a href="<?php echo url_for('receta/index') ?>">Recetas</a></li>
                       <li class="sub"><a href="<?php echo url_for('sorteo/index') ?>">Sorteos</a></li>
-                      <li class="sub"><a href="<?php echo url_for('pulguita/index') ?>">Pulguitas</a></li>
+                      <li class="sub"><a href="<?php echo url_for('galeria/index') ?>">Pulguitas</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Otros
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Revista
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                      <li class="sub"><a href="#">Otro 1</a></li>
-                      <li class="sub"><a href="#">Otro 2</a></li>
-                      <li class="sub"><a href="#">Otro 3</a></li>
+                        <li class="sub"><a href="<?php echo url_for('revista/index') ?>">Revista Online</a></li>
                     </ul>
                   </li>
                          

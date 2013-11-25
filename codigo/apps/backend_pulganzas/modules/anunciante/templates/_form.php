@@ -8,9 +8,9 @@ function completarSelect(datos, input) {
     var sel = document.getElementById(input);
     var obj = jQuery.parseJSON(datos);
     //Si solo es un valor, lipio y lo selecciono.
-    if (obj.length == 1)
+    if (obj.length == 1 && sel)
     {sel.length=0;};
-    if(obj != null) {
+    if(obj != null  && sel) {
 	    var i;
 	    for(i=0; i < obj.length; i++ ) {
 		    
@@ -35,12 +35,16 @@ function completarSelect(datos, input) {
 }
 
 function limpiarSelect(input, leyenda) {
+	if(input){
     var sel = document.getElementById(input);
+    if(sel){
      sel.length = 0; 
      opcion = document.createElement("OPTION"); 
      opcion.innerHTML = leyenda; 
      opcion.value = ''; 
      sel.appendChild(opcion);
+	}
+	}
 }
 
 
@@ -125,19 +129,30 @@ $(function() {
 			</div>
 		</form>
 	</div>
+		<div class="span3 offset1">
+		<?php if(!$form->getObject()->isNew()):?>
+		<h5>Listado de categorias</h5>
+		<?php foreach ($form->getObject()->getSubCategorias() as $subCategoria):?>
+		<?php echo "$subCategoria". "(".$subCategoria->getCategoria()." )"?>
+		<?php echo link_to('Eliminar', 'anunciante/eliminarSubCategoria?id='.$form->getObject()->getId().'&subcat='.$subCategoria->getId(), array('confirm' => '¿Está seguro que desea elimnar la subctaegorias?', 'absolute' => true)); ?>
+		<br />
+		<?php endforeach;?>
+		<?php endif;?>
+	</div>
 	<div class="span3 offset1">
 		<?php if(!$form->getObject()->isNew()):?>
-		Listado de imagenes ya cargadas
+		<h5>Listado de imagenes ya cargadas</h5>
 		<?php foreach ($form->getObject()->getFotos() as $foto):?>
+		<?php echo link_to('x', 'anunciante/eliminarFoto?id='.$form->getObject()->getId().'&foto='.$foto->getId(), array('class'=>'eliminarFoto', 'confirm' => '¿Está seguro que desea elimnar la imagen?', 'absolute' => true)); ?>
 		<?php echo image_tag("../uploads/anunciantes/".$foto->getFilename(),array()) ?>
 		<?php endforeach;?>
 		<?php endif;?>
-
 	</div>
 </div>
 <div style="clear: both;"></div>
-
-			<?php include_partial("modalSubCategoria",array("form"=>$form,"categoriaAnuncianteForm"=>$categoriaAnuncianteForm));?>
-			
-			<?php include_partial("modalFotoAnunciante",array("form"=>$form,"fotoForm"=>$fotoForm));?>
-
+<?php if (isset($categoriaAnuncianteForm) && $categoriaAnuncianteForm):?>
+<?php include_partial("modalSubCategoria",array("form"=>$form,"categoriaAnuncianteForm"=>$categoriaAnuncianteForm));?>
+<?php endif;?>
+<?php if (isset($fotoForm) && $fotoForm):?>
+<?php include_partial("modalFotoAnunciante",array("form"=>$form,"fotoForm"=>$fotoForm));?>
+<?php endif;?>

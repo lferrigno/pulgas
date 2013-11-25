@@ -4,9 +4,7 @@
 			aria-hidden="true">×</button>
 		<h3 id="myModalLabel"><?php echo $anunciante->getNombre()?></h3>
 	</div>
-	<div class="modal-body modalAnuncio">
-
-
+	<div class="modalAnuncio">
 
 <div id="myCarouselAnuncio" class="carousel slide">
 		<ol class="carousel-indicators">
@@ -33,19 +31,9 @@
 		<a class="carousel-control left" href="#myCarouselAnuncio" data-slide="prev">&lsaquo;</a>
 		<a class="carousel-control right" href="#myCarouselAnuncio" data-slide="next">&rsaquo;</a>
 	</div>
-<div >
-						<div class="section_content_text">
-						<?php echo $anunciante->getDireccion()?> - <?php echo $anunciante->getLocalidad()?>
-						<br />
-						Telefono: <?php echo $anunciante->getTelefono()? $anunciante->getTelefono() : " - "?>
-						<br />
-						Email: <?php echo $anunciante->getEmail()? $anunciante->getEmail() : " - "?>
-						<br />
-						Web: <?php echo $anunciante->getWeb()? $anunciante->getWeb() : " - "?>
-						<br />
-						Facebook: <?php echo $anunciante->getFacebook()? $anunciante->getFacebook() : " - "?>
-						</div>
-		</div>
+						<div class="contenidoAnuncio">
+					<?php include_partial('contenidoAnunciante', array('anunciante' => $anunciante)) ?></div>
 	<?php endif;?>
 	</div>
+	<div style="clear:both;"></div>
 	

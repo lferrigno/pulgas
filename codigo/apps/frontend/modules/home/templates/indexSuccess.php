@@ -52,18 +52,34 @@ function abrirRevista(id){
 		<div id="menu_anunciantes_box_izq"></div>
 		<div id="menu_anunciantes_box_centro">
 			<div id="menu_anunciantes_box_header_label"></div>
-			<ul>
-				<li><a href="#" target="_blank"> <?php echo image_tag('botones/educacion.png',array()) ?>
-				</a> <span>Educaci&oacute;n</span></li>
-				<li><a href="#" target="_blank"> <?php echo image_tag('botones/fiestas.png',array()) ?>
-				</a> <span>Fiestas</span></li>
-				<li><a href="#" target="_blank"> <?php echo image_tag('botones/hogar.png',array()) ?>
-				</a> <span>Hogar</span></li>
-				<li><a href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
-				</a> <span>Est&eacute;tica</span></li>
-				<li><a href="#" target="_blank"> <?php echo image_tag('botones/ninos.png',array()) ?>
-				</a> <span>Ni&ntilde;os</span></li>
-			</ul>
+<ul>
+			<li><a id="itemFiestas" href="#" target="_blank">
+					<?php echo image_tag('botones/fiestas.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Fiestas</div></li>
+			<li ><a id="itemNinos" href="#" target="_blank"> <?php echo image_tag('botones/ninos.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Ni&ntilde;os</div></li>
+			<li ><a id="itemEducacion" href="#"
+				target="_blank"> <?php echo image_tag('botones/educacion.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Educaci&oacute;n</div>
+			</li>
+			<li ><a id="itemSalud" href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Salud</div></li>
+			<li ><a id="itemOtros" href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Otros Prof.</div></li>
+			<li ><a id="itemEstetica" href="#" target="_blank">
+					<?php echo image_tag('botones/estetica.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Est&eacute;tica</div>
+			</li>
+			<li ><a id="itemHogar" href="#" target="_blank"> <?php echo image_tag('botones/hogar.png',array()) ?>
+			</a>
+				<div style="width: 70px; text-align: center;">Hogar</div></li>
+		</ul>
 			<a id="menu_anunciantes_box_centro_mas" href="#">+ Ver mas
 				anunciantes</a>
 		</div>

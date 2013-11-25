@@ -16,4 +16,11 @@ class SubCategoriaAnuncianteTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('SubCategoriaAnunciante');
     }
+    
+    public function getByAnuncioAndSubCategoria($anunciante,$sub_categoria) {
+    	$q = $this->createQuery('sca')
+    	->where('sca.sub_categoria_id = ?', $sub_categoria)
+    	->andWhere('sca.anunciante_id = ?', $anunciante);
+    	return $q->fetchOne();
+    }
 }
