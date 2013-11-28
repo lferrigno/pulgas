@@ -9,7 +9,27 @@
 <?php include_javascripts() ?>
 </head>
 <body>
-	<div class="encabezado"></div>
+<script type="text/javascript">
+function abrirRevista(id){
+    $('#unicaRevistaOnlineContent').load(
+            "<?php echo url_for('revista/asyncCargarRevista')?>",
+            "revistaId=" + id+"&actual=0",function() {
+            	$('#unicaRevistaOnline').modal();
+            });
+}
+function abrirUltimaRevista(){
+    $('#unicaRevistaOnlineContent').load(
+            "<?php echo url_for('revista/asyncCargarUltimaRevista')?>",
+            "actual=0",function() {
+            	$('#unicaRevistaOnline').modal();
+            });
+}
+
+
+
+
+</script>
+<div class="encabezado"></div>
 	<div class="content">
 
 		<?php include_partial("global/menu");?>

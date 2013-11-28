@@ -19,5 +19,19 @@ class homeActions extends sfActions
   {
   	
   	$this->ultimaRevista = RevistaTable::getInstance()->obtenerUltimo();
+  	$this->filtro = new AnuncianteFormFilter();
+  	 
+  }
+  
+  public function executeNosotros(sfWebRequest $request)
+  {
+  	 
+  	$this->ultimaRevista = RevistaTable::getInstance()->obtenerUltimo();
+  }
+  
+  public function executeContacto(sfWebRequest $request)
+  {
+  
+  	$this->ultimaRevista = RevistaTable::getInstance()->obtenerUltimo();
   }
 }

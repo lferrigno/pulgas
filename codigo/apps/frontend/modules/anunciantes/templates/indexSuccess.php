@@ -110,7 +110,6 @@ function cargarlistado_subCategoriasAjax(tipo){
 
 <div class="tituloSeccion seccionAnunciantes">Anunciantes</div>
 
-<div class="tituloBuscador">Buscador de anunciantes</div>
 <div class="row-fluid innerContent">
 	<form class="form-horizontal formBusqueda" id="form_filter"
 		action="<?php echo url_for('anunciantes/index'); ?>" method="post">
@@ -212,8 +211,9 @@ if  ($anuncios->count() !=0) : ?>
 
 	</div>
 </div>
+<div class="separadorAnuncio seccionAnunciantes" style="clear:both;"></div>
 <?php endforeach;?>
-<div style="height: 20px;; clear: both;">
+<div style="height: 20px; clear: both;">
 	<?php  echo pager_navigation($pager, 'anunciantes/index') ?>
 </div>
 <?php elseif ($se_filtro):?>

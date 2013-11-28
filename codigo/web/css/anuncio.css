@@ -36,3 +36,14 @@
 	margin-top: 10px;
 	width: 25%;
 }
+
+.separadorAnuncio{
+		border-bottom: 1px groove;
+	width: auto;
+	text-align: right;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-style: italic;
+	font-size: 30pt;
+	margin: 19px;
+	padding-bottom: 15px;
+}

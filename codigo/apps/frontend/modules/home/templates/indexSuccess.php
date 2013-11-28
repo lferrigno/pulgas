@@ -1,14 +1,4 @@
-<script type="text/javascript">
-function abrirRevista(id){
-    $('#unicaRevistaOnlineContent').load(
-            "<?php echo url_for('revista/asyncCargarRevista')?>",
-            "revistaId=" + id+"&actual=0",function() {
-            	$('#unicaRevistaOnline').modal();
-            });
-}
 
-
-</script>
 	<div id="myCarousel" class="carousel slide">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -53,7 +43,7 @@ function abrirRevista(id){
 		<div id="menu_anunciantes_box_centro">
 			<div id="menu_anunciantes_box_header_label"></div>
 <ul>
-			<li><a id="itemFiestas" href="#" target="_blank">
+			<li><a id="itemFiestas" href="javascript:buscar('','1')">
 					<?php echo image_tag('botones/fiestas.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Fiestas</div></li>
@@ -80,7 +70,7 @@ function abrirRevista(id){
 			</a>
 				<div style="width: 70px; text-align: center;">Hogar</div></li>
 		</ul>
-			<a id="menu_anunciantes_box_centro_mas" href="#">+ Ver mas
+			<a id="menu_anunciantes_box_centro_mas" href="<?php echo url_for('anunciantes/index')?>">+ Ver m&aacute;s
 				anunciantes</a>
 		</div>
 		<div id="menu_anunciantes_box_der"></div>
@@ -174,4 +164,46 @@ function abrirRevista(id){
 			<?php echo image_tag('pulbicidad.png',array()) ?>
 		</div>
 </div>
+
+<script>
+function buscar(rubro,categoria){
+	$("#anunciante_filters_rubro").val(rubro);
+	$("#anunciante_filters_nombre").val("");
+	$("#anunciante_filters_categoria").val(categoria);
+	$("#form_filter").submit();
+}
+  </script>
+<div style="display:none;">
 <div style="clear: both"></div>
+<form class="form-horizontal formBusqueda" id="form_filter"
+		action="<?php echo url_for('anunciantes/index'); ?>" method="post">
+		<input type="hidden" id="page" value="0" name="page" />
+		<?php echo $filtro->renderHiddenFields()?>
+		<div class="row-fluid">
+			<div class="span5">
+				<?php echo $filtro['nombre']->renderLabel()?>
+				<?php echo $filtro['nombre']->render(array("class"=>"span12"))?>
+			</div>
+			<!--/span-->
+			<div class="span5">
+				<?php echo $filtro['rubro']->renderLabel()?>
+				<?php echo $filtro['rubro']->render(array("class"=>"span12"))?>
+			</div>
+			<!--/span-->
+		</div>
+		<!--/row-->
+		<div class="row-fluid">
+			<div class="span5">
+				<?php echo $filtro['categoria']->renderLabel()?>
+				<?php echo $filtro['categoria']->render(array("class"=>"span12"))?>
+			</div>
+			<!--/span-->
+			<div class="span5">
+				<button type="submit" class="btn btn-success btnFiltro">Buscar</button>
+			</div>
+			<!--/span-->
+		</div>
+		<!--/row-->
+
+	</form>
+	</div>
