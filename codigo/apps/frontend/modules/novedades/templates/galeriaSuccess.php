@@ -1,6 +1,7 @@
 <div class="tituloSeccion seccionNovedades">Novedades</div>
 
 <?php include_partial('galeriaCarrousel', array('nombreEncabezado' => $tituloNovedad,"galeria"=>$galeria,"urlVer"=>url_for('novedades/galeria?id='.$galeria->getId(),array()))) ?>
+<div  style="clear:both;"></div>
 <div class="separador"></div>
 
 <div style="margin: 20px">

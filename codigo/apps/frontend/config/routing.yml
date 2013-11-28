@@ -56,6 +56,10 @@ ver_revista:
   requirements:
     id: \d+
 
+homepage:
+  url:   /
+  param: { module: home, action: index }
+  
 # generic rules
 # please, remove them by adding more specific rules
 default_index:

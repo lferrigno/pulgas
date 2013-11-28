@@ -26,7 +26,7 @@ $(function() {
 	limpiarTodos();
     $('.linkTrigger a').hover(function(e) {
         limpiarTodos();
-     $(this).parent().css( "background-color", "#DB541F" );
+     //$(this).parent().css( "background-color", "#DB541F" );
 	var selector_listado_subCategorias = "#listado_subCategorias_"+$(this).attr('id');
     $(selector_listado_subCategorias).show();
      }, function() {
@@ -80,16 +80,16 @@ $.expr[':'].containsexactly = function(obj, index, meta, stack)
 		   break;	   
 
 		 }
-		 $("#"+item).parent().css( "background-color", "#DB541F" );
+		 //$("#"+item).parent().css( "background-color", "#DB541F" );
 		 $("#"+activa).show();
 
-		 $('#'+activa+' ul li a').filter(function() {
-			    return $(this).text().trim() === nombre;
-			}).parent().css("background-color", "white");
+	// $('#'+activa+' ul li a').filter(function() {
+		//	    return $(this).text().trim() === nombre;
+		//	}).parent().css("background-color", "white");
 
-		 $('#'+activa+' ul li a').filter(function() {
-			    return $(this).text().trim() === nombre;
-			}).parent().css("color", "#DB541F");
+		 //$('#'+activa+' ul li a').filter(function() {
+			//    return $(this).text().trim() === nombre;
+			//}).parent().css("color", "#DB541F");
 		 }
 
  
@@ -163,10 +163,10 @@ function cargarlistado_subCategoriasAjax(tipo){
 			</a>
 				<div style="width: 70px; text-align: center;">Educaci&oacute;n</div>
 			</li>
-			<li class="linkTrigger"><a id="itemSalud" href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
+			<li class="linkTrigger"><a id="itemSalud" href="#" target="_blank"> <?php echo image_tag('botones/salud.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Salud</div></li>
-			<li class="linkTrigger"><a id="itemOtros" href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
+			<li class="linkTrigger"><a id="itemOtros" href="#" target="_blank"> <?php echo image_tag('botones/otros profesionales.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Otros Prof.</div></li>
 			<li class="linkTrigger"><a id="itemEstetica" href="#" target="_blank">

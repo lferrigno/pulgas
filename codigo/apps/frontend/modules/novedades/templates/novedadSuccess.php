@@ -1,6 +1,7 @@
 <div class="tituloSeccion seccionNovedades">Novedades</div>
 
 <?php include_partial('novedadUltima', array('nombreEncabezado' => $tituloNovedad,"elemento"=>$novedad,"urlVer"=>url_for($urlShowNovedad,array('id'=>$novedad->getId())))) ?>
+<div  style="clear:both;"></div>
 <div class="separador"></div>
 
 <div style="margin: auto">

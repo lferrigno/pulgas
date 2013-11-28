@@ -23,7 +23,7 @@
 	</div>
 
 	<div id="encontranos_box">
-		<a href="#" target="_blank"> <?php echo image_tag('encontranos.png',array()) ?>
+		<a href="https://www.facebook.com/pages/Revista-Pulganzas/614677658560217" target="_blank"> <?php echo image_tag('encontranos.png',array()) ?>
 		</a>
 	</div>
 	<div id="buscador_anunciantes_box">
@@ -55,10 +55,10 @@
 			</a>
 				<div style="width: 70px; text-align: center;">Educaci&oacute;n</div>
 			</li>
-			<li ><a id="itemSalud" href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
+			<li ><a id="itemSalud" href="#" target="_blank"> <?php echo image_tag('botones/salud.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Salud</div></li>
-			<li ><a id="itemOtros" href="#" target="_blank"> <?php echo image_tag('botones/estetica.png',array()) ?>
+			<li ><a id="itemOtros" href="#" target="_blank"> <?php echo image_tag('botones/otros profesionales.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Otros Prof.</div></li>
 			<li ><a id="itemEstetica" href="#" target="_blank">
@@ -86,7 +86,7 @@
 
 
 		</div>
-		<div class="section_content">
+		<div class="section_content_home">
 			<?php echo image_tag('imagenNotas.png',array()) ?>
 			<div class="section_content_text">IMAGENNSLK sñldkañldkal IMAGENNSLK
 				sñldkañldkal IMAGENNSLK sñldkañldkal IMAGENNSLK sñldkañldkal
@@ -107,7 +107,7 @@
 
 
 		</div>
-		<div class="section_content">
+		<div class="section_content_home">
 			<?php echo image_tag('imagenNotas.png',array()) ?>
 			<div class="section_content_text halfCol">IMAGENNSLK sñldkañldkal
 				IMAGENNSLK sñldkañldkal IMAGENNSLK sñldkañldkal IMAGENNSLK
@@ -142,7 +142,7 @@
 
 
 		</div>
-		<div class="section_content">
+		<div class="section_content_home">
 			<?php echo image_tag('imagenNotas.png',array()) ?>
 			<div class="section_content_text halfCol">IMAGENNSLK sñldkañldkal
 				IMAGENNSLK sñldkañldkal IMAGENNSLK sñldkañldkal IMAGENNSLK
@@ -173,6 +173,7 @@ function buscar(rubro,categoria){
 	$("#form_filter").submit();
 }
   </script>
+  <div style="clear:both;"></div>
 <div style="display:none;">
 <div style="clear: both"></div>
 <form class="form-horizontal formBusqueda" id="form_filter"

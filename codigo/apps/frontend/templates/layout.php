@@ -29,7 +29,7 @@ function abrirUltimaRevista(){
 
 
 </script>
-<div class="encabezado"></div>
+<div ><a href="<?php echo url_for('@homepage')?>" ><div class="encabezado"></div></a></div>
 	<div class="content">
 
 		<?php include_partial("global/menu");?>
