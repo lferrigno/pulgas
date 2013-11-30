@@ -28,7 +28,7 @@ class novedadesActions extends sfActions
 		$this->novedad = $sorteo;
 		$this->ultimosMsg = "Últimos Sorteos";
 		$this->tituloNovedad = "SORTEOS";
-		$limit = 7;
+		$limit = 10;
 		$this->novedades = SorteoTable::getInstance()->getAllNewest($limit);
 		$this->urlShowNovedad = 'novedades_show_sorteo'; 
 		$this->setTemplate('novedad');
@@ -41,11 +41,22 @@ class novedadesActions extends sfActions
 		$this->novedad = $receta;
 		$this->ultimosMsg = "Últimas Recetas";
 		$this->tituloNovedad = "RECETAS";
-		$limit = 7;
+		$limit = 10;
 		$this->novedades = RecetaTable::getInstance()->getAllNewest($limit);
 		$this->urlShowNovedad = 'novedades_show_receta';
 		$this->setTemplate('novedad');
+	}
 	
+	public function executeNotas(sfWebRequest $request)
+	{
+		$nota= NotaTable::getInstance()->obtenerUltimo();
+		
+		$this->novedad = $nota;
+		$this->ultimosMsg = "Últimas Notas";
+		$this->tituloNovedad = "Notas";
+		$limit = 10;
+		$this->novedades = NotaTable::getInstance()->getAllNewest($limit);
+		$this->urlShowNovedad = 'novedades_show_nota';
 	}
 	
 	
@@ -67,13 +78,23 @@ class novedadesActions extends sfActions
 		$this->setTemplate('show');
 	}
 	
+
+	public function executeShowNota(sfWebRequest $request)
+	{
+		$this->forward404Unless($nota = Doctrine_Core::getTable('Nota')->find(array($request->getParameter('id'))), sprintf('Object nota does not exist (%s).', $request->getParameter('id')));
+		$this->novedad = $nota;
+		$this->urlVolver = $this->generateUrl('notas');
+		$this->nombreEncabezado = "Nota";
+		$this->setTemplate('showNota');
+	}
+	
 	public function executePulguita(sfWebRequest $request)
 	{
 		$this->forward404Unless($pulguita = Doctrine_Core::getTable('Pulguita')->find(array($request->getParameter('id'))), sprintf('Object pulguita does not exist (%s).', $request->getParameter('id')));
 		$this->novedad = $pulguita;
 		$this->ultimosMsg = "Últimas Pulguitas";
 		$this->tituloNovedad = "GALERIA";
-		$limit = 7;
+		$limit = 10;
 		$this->novedades = PulguitaTable::getInstance()->getAllNewest($limit);
 		
 		$this->urlShowNovedad = 'novedades_show_pulguita';

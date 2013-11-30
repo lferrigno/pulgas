@@ -738,3 +738,22 @@ background-color: #FF0000;
     position: relative;
     top: 30px;
 }
+
+.coloresNotas{
+	color: #205D4F;
+}
+.coloresNosotros{
+	color: #BB350F;
+}
+
+.coloresNovedades{
+	color: #FD7243;
+}
+
+.coloresAnunciantes{
+	color: #D0A732;
+}
+
+.coloresContactps{
+	color: #9E9224;
+}

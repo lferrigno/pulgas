@@ -26,6 +26,13 @@ Receta:
     keyField: tipo
     keyValue: 'Receta'
     
+Nota:
+  inheritance:
+    extends: Novedad
+    type: column_aggregation
+    keyField: tipo
+    keyValue: 'Nota'
+    
 Pulguita:
   inheritance:
     extends: Novedad

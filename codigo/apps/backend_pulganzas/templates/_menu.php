@@ -20,6 +20,14 @@
                       <li class="sub"><a href="<?php echo url_for('galeria/index') ?>">Pulguitas</a></li>
                     </ul>
                   </li>
+                   <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Notas
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="sub"><a href="<?php echo url_for('nota/index') ?>">Notas</a></li>
+                    </ul>
+                  </li>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Revista
                         <b class="caret"></b>

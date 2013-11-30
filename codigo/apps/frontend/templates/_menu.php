@@ -17,7 +17,7 @@
 		<img src="/images/botones/novedades.png" onmouseover="this.src='/images/botones/hover/novedades_h.png'" onmouseout="this.src='/images/botones/novedades.png'">
 			</a>
 			</li>
-			<li><a href="#"> 
+			<li><a href="<?php echo url_for('notas')?>" > 
 			<img src="/images/botones/notas.png" onmouseover="this.src='/images/botones/hover/notas_h.png'" onmouseout="this.src='/images/botones/notas.png'">
 			</a>
 			</li>

@@ -2,6 +2,7 @@
 
 <?php include_partial('galeriaCarrousel', array('nombreEncabezado' => $tituloNovedad,"galeria"=>$galeria,"urlVer"=>url_for('novedades/galeria?id='.$galeria->getId(),array()))) ?>
 <div  style="clear:both;"></div>
+<?php if($galerias && $galerias->count()>0):?>
 <div class="separador"></div>
 
 <div style="margin: 20px">
@@ -12,6 +13,7 @@
 
 
 <?php endforeach;?>
+<?php endif;?>
 <div style="clear: both;"></div>
 
 <a style="margin-bottom: 15px;" href="<?php echo url_for('novedades') ?>" class="btn">Volver</a>

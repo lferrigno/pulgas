@@ -1,9 +1,4 @@
-<div class="tituloSeccion seccionNovedades coloresNovedades">Novedades</div>
-<div class="section_header">
-<div class="section_header_izq"></div>
-<div class="section_header_text"><?php echo $nombreEncabezado ?></div>
-<div class="section_header_der"></div>
-</div>
+<div class="tituloSeccion seccionNovedades coloresNotas">Notas</div>
 <div style="clear: both;"></div>
 
 <div class="span9">

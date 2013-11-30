@@ -37,6 +37,18 @@ novedades_show_receta:
   param: { module: novedades, action: showReceta }
   requirements:
     id: \d+
+ 
+novedades_show_nota:
+  url:   /novedades/show/nota/:id
+  param: { module: novedades, action: showNota }
+  requirements:
+    id: \d+   
+    
+notas:
+  url:   /notas
+  param: { module: novedades, action: notas }
+  requirements:
+    id: \d+  
 
 novedades_pulguita:
   url:   /novedades/pulguita/:id
