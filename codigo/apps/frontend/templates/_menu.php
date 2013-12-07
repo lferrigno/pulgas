@@ -21,7 +21,7 @@
 			<img src="/images/botones/notas.png" onmouseover="this.src='/images/botones/hover/notas_h.png'" onmouseout="this.src='/images/botones/notas.png'">
 			</a>
 			</li>
-			<li><a href="<?php echo url_for('home/contacto')?>" > 
+			<li><a href="<?php echo url_for('contacto/index')?>" > 
 			<img src="/images/botones/contacto.png" onmouseover="this.src='/images/botones/hover/contacto_h.png'" onmouseout="this.src='/images/botones/contacto.png'">
 			</a>
 			</li>

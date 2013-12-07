@@ -34,6 +34,15 @@
 	margin:auto;
 }
 
+.botoneraRevista img{
+		width: 120px;
+}
+
+.lupa img{
+	width:30px;
+}
+
+
 #revista_irA{
 	width: 20px;
 }

@@ -39,8 +39,16 @@ function abrirUltimaRevista(){
 	<div id="unicaRevistaOnlineContent"></div>
 </div>
 	</div>
+	<div style="clear:both;"></div>
 	<div id="footer">
-		<div></div>
+		<ul style="clear:both;" id="footer-nav">
+<li id="active"><a href="#" id="current">NOSOTROS</a></li>
+<li><a href="#">ANUNCIANTES</a></li>
+<li><a href="#">REVISTA ONLINE</a></li>
+<li><a href="#">NOVEDADES</a></li>
+<li><a href="#">NOTAS</a></li>
+<li><a href="#">CONTACTO</a></li>
+</ul>
 	</div>
 
 </body>

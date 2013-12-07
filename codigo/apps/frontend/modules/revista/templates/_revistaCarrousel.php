@@ -65,14 +65,14 @@ $(function() {
 </script>
 </div>
 <?php if($revista && $revista->getFotos()->count() >0):?>
+
+<div id="imagenActual">
+<?php echo image_tag("../uploads/revista/".$revista->getFotos()->getFirst()->getFilename(),array()) ?>			
+</div>
 <div id="botonera">
 <a href="javascript:avanzar()">Avanzar</a>
 <a href="javascript:volver()">Volver</a>
 <a href="javascript:zoomIn()">Zoom In</a>
 <a href="javascript:zoomOut()">Zoom Out</a>
 </div>
-<div id="imagenActual">
-<?php echo image_tag("../uploads/revista/".$revista->getFotos()->getFirst()->getFilename(),array()) ?>			
-</div>
-
 	<?php endif;?>
