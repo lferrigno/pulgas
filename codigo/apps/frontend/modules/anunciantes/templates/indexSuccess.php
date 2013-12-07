@@ -213,13 +213,12 @@ if  ($anuncios->count() !=0) : ?>
 </div>
 <div class="separadorAnuncio seccionAnunciantes" style="clear:both;"></div>
 <?php endforeach;?>
-<div style="height: 20px; clear: both;">
+<div style="height: 40px; clear: both; margin:auto; text-align:center;">
 	<?php  echo pager_navigation($pager, 'anunciantes/index') ?>
 </div>
 <?php elseif ($se_filtro):?>
 No hay resultados
 <?php endif;?>
-
 
 <div id="anuncioModal" class="modal hide fade" tabindex="-1"
 	role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

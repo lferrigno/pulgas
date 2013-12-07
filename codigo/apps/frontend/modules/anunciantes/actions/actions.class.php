@@ -38,7 +38,7 @@ class anunciantesActions extends sfActions
 			$filters = $this->getUser()->getAttribute('filtro');
 			$query = $this->getQueryBusqueda($filters);
 		}
-		$this->pager = new sfDoctrinePager('Anunciante', 10);
+		$this->pager = new sfDoctrinePager('Anunciante', 1);
 		$this->pager->setQuery($query);
 		$this->pager->setPage($request->getParameter('page', 0));
 		$this->pager->init();
