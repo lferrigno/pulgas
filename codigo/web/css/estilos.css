@@ -351,6 +351,12 @@ p:hover {
 	margin-left: 19px;
 	width: 450px;
 }
+
+.section_content_rever img{
+		float: right;
+	margin-right: 19px;
+	width: 450px;
+}
 .section_content_home img {
 	float: left;
 	margin-left: 19px;
@@ -404,7 +410,21 @@ p:hover {
 	margin-top: 10px;
 	width: 450px;
 }
+.section_content_text_nosotros{
+		float: left;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 450px;
+	text-align: justify;
+}
 
+.section_content_text_right{
+	height: 170px;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 450px;
+}
 .section_content_title {
 	float: left;
 	margin-left: 13px;

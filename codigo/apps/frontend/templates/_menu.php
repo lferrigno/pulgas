@@ -1,7 +1,7 @@
 	<div class="menu_izq"></div>
 	<div class="menu">
 		<ul>
-			<li><a href="<?php echo url_for('home/nosotros')?>"> 
+			<li><a href="<?php echo url_for('nosotros/index')?>"> 
 			<img src="/images/botones/nosotros.png" onmouseover="this.src='/images/botones/hover/nosotros_h.png'" onmouseout="this.src='/images/botones/nosotros.png'">	
 			</a>
 			</li>

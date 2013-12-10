@@ -42,12 +42,12 @@ function abrirUltimaRevista(){
 	<div style="clear:both;"></div>
 	<div id="footer">
 		<ul style="clear:both;" id="footer-nav">
-<li id="active"><a href="#" id="current">NOSOTROS</a></li>
-<li><a href="#">ANUNCIANTES</a></li>
-<li><a href="#">REVISTA ONLINE</a></li>
-<li><a href="#">NOVEDADES</a></li>
-<li><a href="#">NOTAS</a></li>
-<li><a href="#">CONTACTO</a></li>
+<li id="active"><a href="<?php echo url_for('nosotros/index')?>" id="current">NOSOTROS</a></li>
+<li><a href="<?php echo url_for('anunciantes/index')?>">ANUNCIANTES</a></li>
+<li><a href="javascript:abrirUltimaRevista()">REVISTA ONLINE</a></li>
+<li><a href="<?php echo url_for('novedades/index')?>">NOVEDADES</a></li>
+<li><a href="<?php echo url_for('notas')?>">NOTAS</a></li>
+<li><a href="<?php echo url_for('contacto/index')?>">CONTACTO</a></li>
 </ul>
 	</div>
 
