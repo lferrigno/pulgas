@@ -1,5 +1,5 @@
-<div>
 <?php if($elemento):?>
+<div>
 <div class="section_content">
 			<?php echo image_tag("../uploads/novedades/".$elemento->getFileName(),array()) ?>
 <div class="section_content_title"><?php echo $elemento->getTitulo()?></div>

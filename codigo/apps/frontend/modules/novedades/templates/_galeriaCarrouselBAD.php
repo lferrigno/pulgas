@@ -2,6 +2,35 @@
 <div class="section_header_izq"></div>
 <div class="section_header_text"><?php echo $nombreEncabezado?></div>
 <div class="section_header_der"></div>
+<script type="text/javascript">
+
+
+$(function() {
+	$('.carousel').carousel(
+			{
+			pause: true,
+			interval: false
+			});
+	
+	function zoomear(elem) {
+				elem.ready(function() {
+					elem.wheelzoom();
+			 });
+	}
+	$(".carousel-control").click(function(e) {  
+		setTimeout(function(){
+			$(".item.active img").each(function(index) {
+			zoomear($(this));
+			});	
+			}, 2000);
+		});  
+
+	$(".item.active img").each(function(index) {
+		zoomear($(this));
+		});
+});
+
+</script>
 </div>
 <?php if($galeria && $galeria->getFotos()->count() >0):?>
 <div style="margin: 10px" class="section_content_title_ultima"><?php echo $galeria->getTitulo()?></div>

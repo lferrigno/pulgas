@@ -23,8 +23,7 @@
 
 <div style="clear: both;"></div>
 
-<a style="margin-bottom: 15px;" href="<?php echo $urlVolver ?>" class="btn">Volver</a>
 </div>
 <div style="clear: both;"></div>
-
+<?php include_partial('global/publicidad',array());?>
 <div style="clear: both;"></div>

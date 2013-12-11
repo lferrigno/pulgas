@@ -19,6 +19,9 @@ class homeActions extends sfActions
   {
   	
   	$this->ultimaRevista = RevistaTable::getInstance()->obtenerUltimo();
+  	$this->ultimaReceta = RecetaTable::getInstance()->obtenerUltimo();
+  	$this->ultimaGaleria = GaleriaTable::getInstance()->obtenerUltimo();
+  	$this->ultimaNota= NotaTable::getInstance()->obtenerUltimo();
   	$this->filtro = new AnuncianteFormFilter();
   	 
   }

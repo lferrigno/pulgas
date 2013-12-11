@@ -1,48 +1,53 @@
-
 #unicaRevistaOnline {
 	height: 100%;
 	position: absolute;
 	top: 0;
 	width: auto;
-	margin:auto;
+	margin: auto;
 	left: auto;
 	border: none;
 	background-color: transparent;
 }
 
-
-#unicaRevistaOnlineContent{
+#unicaRevistaOnlineContent {
 	margin: 0;
 	padding: 0;
 }
-.modalRevista{
+
+.modalRevista {
 	height: 100%;
-		width: auto;
-	margin:auto;
+	width: auto;
+	margin: auto;
 }
 
-#imagenRevistaActual{
+#imagenRevistaActual {
 	height: 90%;
-		width: auto;
-	margin:auto;
+	width: auto;
+	margin: auto;
 }
 
-.botoneraRevista{
-		height: 10%;
-		background-color: black;
-		width: auto;
-	margin:auto;
+.botoneraRevista {
+	height: 10%;
+	background-color: black;
+	width: auto;
+	margin: auto;
 }
 
-.botoneraRevista img{
-		width: 120px;
+.botoneraRevista img {
+	width: 120px;
 }
 
-.lupa img{
-	width:30px;
+.lupa img {
+	width: 30px;
 }
 
+.lupa_home img {
+	margin: 10px;
+	position: relative;
+	top: -10px;
+	width: 30px;
+}
 
-#revista_irA{
+#revista_irA {
 	width: 20px;
 }

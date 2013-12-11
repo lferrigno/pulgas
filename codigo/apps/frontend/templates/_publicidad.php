@@ -1,0 +1,1 @@
+<div class="publicidad"><?php echo image_tag('publicidad_notas.png')?></div>

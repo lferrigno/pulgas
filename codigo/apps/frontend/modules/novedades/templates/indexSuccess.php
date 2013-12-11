@@ -15,3 +15,5 @@
  <?php include_partial('galeria', array('nombreEncabezado' => "GALERIA","elemento"=>$ultimaGaleria,"urlVer"=>url_for('novedades/galeria?id='.$ultimaGaleria->getId()))) ?>
 <?php endif;?>
 <div style="clear: both;"></div>
+<?php include_partial('global/publicidad',array());?>
+<div style="clear: both;"></div>

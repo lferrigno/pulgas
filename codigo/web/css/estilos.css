@@ -40,6 +40,7 @@ display: inline;
 list-style-type: none;
 padding-right: 60px;
 color: #30AD78;
+font-weight: 100;
 }
 
 
@@ -372,7 +373,7 @@ p:hover {
 .view_more {
 	float: left;
 	height: 30px;
-	margin-left: -623px;
+	//margin-left: -623px;
 	margin-top: 153px;
 	width: 101px;
 }
@@ -824,4 +825,8 @@ background-color: #FF0000;
 
 .margin-box{
 	margin:19px;
+}
+
+.publicidad{
+	margin: 19px;
 }

@@ -15,6 +15,5 @@
 <?php endforeach;?>
 <?php endif;?>
 <div style="clear: both;"></div>
-
-<a style="margin-bottom: 15px;" href="<?php echo url_for('novedades') ?>" class="btn">Volver</a>
+<?php include_partial('global/publicidad',array());?>
 </div>

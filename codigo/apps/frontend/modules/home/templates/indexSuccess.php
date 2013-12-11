@@ -33,9 +33,10 @@
 		<div class="box_header_label"></div>
 
 		<div class="box_content">
-			<input type="text" name="nombre_anunciante"
+			<input id="nombre_anunciante_buscar" type="text" name="nombre_anunciante"
 				placeholder="Ingrese aqu&iacute; el nombre del anunciante">
 		</div>
+		<a class="lupa_home" href="javascript:buscarNombre()"><?php echo image_tag('lupa.png')?></a>
 	</div>
 	<div style="clear: both"></div>
 	<div id="menu_anunciantes_box">
@@ -87,12 +88,10 @@
 
 		</div>
 		<div class="section_content_home">
-			<?php echo image_tag('imagenNotas.png',array()) ?>
-			<div class="section_content_text">IMAGENNSLK sñldkañldkal IMAGENNSLK
-				sñldkañldkal IMAGENNSLK sñldkañldkal IMAGENNSLK sñldkañldkal
-				IMAGENNSLK sñldkañldkal</div>
+			<?php echo image_tag("../uploads/novedades/".$ultimaNota->getFilename(),array()) ?>
+			<div class="section_content_text"><?php echo strip_tags($ultimaNota->getResumen())?></div>
 			<div class="view_more">
-				<a href="#"> <?php echo image_tag('boton_verMas.png',array()) ?>
+				<a href="<?php echo url_for('notas')?>"> <?php echo image_tag('boton_verMas.png',array()) ?>
 				</a>
 			</div>
 		</div>
@@ -108,12 +107,10 @@
 
 		</div>
 		<div class="section_content_home">
-			<?php echo image_tag('imagenNotas.png',array()) ?>
-			<div class="section_content_text halfCol">IMAGENNSLK sñldkañldkal
-				IMAGENNSLK sñldkañldkal IMAGENNSLK sñldkañldkal IMAGENNSLK
-				sñldkañldkal IMAGENNSLK sñldkañldkal</div>
+			<?php echo image_tag("../uploads/novedades/".$ultimaReceta->getFilename(),array()) ?>
+			<div class="section_content_text halfCol"><?php echo $ultimaReceta->getTitulo()?></div>
 			<div class="view_more halfCol_more">
-				<a href="#"> <?php echo image_tag('boton_verMas.png',array()) ?>
+				<a href="<?php echo url_for('novedades')?>"> <?php echo image_tag('boton_verMas.png',array()) ?>
 				</a>
 			</div>
 		</div>
@@ -143,14 +140,8 @@
 
 		</div>
 		<div class="section_content_home">
-			<?php echo image_tag('imagenNotas.png',array()) ?>
-			<div class="section_content_text halfCol">IMAGENNSLK sñldkañldkal
-				IMAGENNSLK sñldkañldkal IMAGENNSLK sñldkañldkal IMAGENNSLK
-				sñldkañldkal IMAGENNSLK sñldkañldkal</div>
-			<div class="view_more halfCol_more">
-				<a href="#"> <?php echo image_tag('boton_verMas.png',array()) ?>
-				</a>
-			</div>
+			<a href="<?php echo url_for('novedades')?>"><?php echo image_tag("../uploads/galeria/".$ultimaGaleria->getFotos()->getFirst()->getFileName(),array()) ?>
+			</a>
 		</div>
 	</div>
 
@@ -170,6 +161,13 @@ function buscar(rubro,categoria){
 	$("#anunciante_filters_rubro").val(rubro);
 	$("#anunciante_filters_nombre").val("");
 	$("#anunciante_filters_categoria").val(categoria);
+	$("#form_filter").submit();
+}
+function buscarNombre(){
+	var nombre = $("#nombre_anunciante_buscar").val();
+	$("#anunciante_filters_rubro").val("");
+	$("#anunciante_filters_nombre").val(nombre);
+	$("#anunciante_filters_categoria").val("");
 	$("#form_filter").submit();
 }
   </script>

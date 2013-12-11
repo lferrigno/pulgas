@@ -12,3 +12,5 @@
 <?php endforeach;?>
 <?php endif;?>
 <div style="clear: both;"></div>
+<?php include_partial('global/publicidad',array());?>
+<div style="clear: both;"></div>
