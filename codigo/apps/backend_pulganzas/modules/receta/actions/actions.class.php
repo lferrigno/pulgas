@@ -56,7 +56,7 @@ class recetaActions extends sfActions
 
   public function executeDelete(sfWebRequest $request)
   {
-    $request->checkCSRFProtection();
+//     $request->checkCSRFProtection();
 
     $this->forward404Unless($receta = Doctrine_Core::getTable('Receta')->find(array($request->getParameter('id'))), sprintf('Object receta does not exist (%s).', $request->getParameter('id')));
     $receta->delete();

@@ -1,5 +1,3 @@
-<h1>Novedads List</h1>
-
 <table>
   <thead>
     <tr>

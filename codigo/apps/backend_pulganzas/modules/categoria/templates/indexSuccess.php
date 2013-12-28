@@ -1,6 +1,3 @@
-<h1>Categorias</h1>
-
-
  <div class="span9">
     <table class="lista table table-hover table-bordered">
          <thead>

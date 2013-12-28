@@ -327,6 +327,12 @@ p:hover {
 }
 
 .section_content {
+	clear: both;
+	padding-top: 20px;
+	font-weight: normal;
+}
+
+.section_content_novedad {
 	height: 220px;
 	margin-top: 20px;
 }

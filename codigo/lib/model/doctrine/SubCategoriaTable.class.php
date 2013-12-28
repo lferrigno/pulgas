@@ -28,4 +28,16 @@ class SubCategoriaTable extends Doctrine_Table
     	->where('c.codigo LIKE ?', $codigo);
     	return $q->execute();
     }
+    
+    public function getWhereQuery($wheres)
+    {
+    	$q = $this->createQuery('sc')
+    	->where('1 = 1');
+    
+    	foreach($wheres as $where){
+    		$q->andWhere($where);
+    	}
+    
+    	return $q;
+    }
 }

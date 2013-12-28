@@ -88,7 +88,7 @@ class revistaActions extends sfActions
 
   public function executeDelete(sfWebRequest $request)
   {
-    $request->checkCSRFProtection();
+//     $request->checkCSRFProtection();
 
     $this->forward404Unless($revista = Doctrine_Core::getTable('Revista')->find(array($request->getParameter('id'))), sprintf('Object revista does not exist (%s).', $request->getParameter('id')));
     $revista->delete();

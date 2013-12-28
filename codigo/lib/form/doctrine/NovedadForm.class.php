@@ -27,9 +27,11 @@ class NovedadForm extends BaseNovedadForm
   			'required' => $this->isNew(), // obrigatorio somente se novo registro
   			'max_size' => 5000000,
   			'mime_types' => 'web_images',
-  			'required' => false,
   			'path' => sfConfig::get('sf_upload_dir').'/novedades'
   	));
+  	
+  	$this->widgetSchema['resumen'] = new sfWidgetFormTextarea(array(),array('class'=>'no-editor'));
+  	$this->validatorSchema['resumen'] = new sfValidatorString(array('required' => false,'max_length'=> 200));
   	
   	
   	$this->validatorSchema['filename_delete'] = new sfValidatorBoolean();

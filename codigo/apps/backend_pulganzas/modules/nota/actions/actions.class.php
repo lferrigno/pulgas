@@ -54,7 +54,7 @@ class notaActions extends sfActions
 
   public function executeDelete(sfWebRequest $request)
   {
-    $request->checkCSRFProtection();
+//     $request->checkCSRFProtection();
 
     $this->forward404Unless($nota = Doctrine_Core::getTable('Nota')->find(array($request->getParameter('id'))), sprintf('Object nota does not exist (%s).', $request->getParameter('id')));
     $nota->delete();

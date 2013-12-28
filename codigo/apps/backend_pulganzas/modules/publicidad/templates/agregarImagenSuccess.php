@@ -4,16 +4,16 @@
 <script>
 
 $(function() {
-	$('#revista_foto_filename').change(function() {
+	$('#publicidad_foto_filename').change(function() {
 		
-		$('#revista_foto_nombre_original').val($(this).val());
+		$('#publicidad_foto_nombre_original').val($(this).val());
 	});
 });
 
 </script>
 
 <form class="form-horizontal"
-	action="<?php echo url_for('revista/guardarImagen') ?>"
+	action="<?php echo url_for('publicidad/guardarImagen') ?>"
 	method="post"
 	<?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 	<?php if (!$form->getObject()->isNew()): ?>
@@ -42,22 +42,10 @@ $(function() {
 			</span>
 		</div>
 		</div>
-		<div
-		class="control-group <?php if ($form['orden']->hasError()){echo "error";};?>">
-	
-				<label class="control-label" for="orden"> <?php echo $form['orden']->renderLabel()?>
-		</label>
-		<div class="controls">
-			<?php echo $form['orden']->render()?>
-			<span class="help-inline"> <?php echo $form['orden']->renderError()?>
-			</span>
-		</div>
-		
-	</div>
 	<div class="control-group">
 		<div class="controls">
 			<button type="submit" class="btn">Guardar</button>
-			<a href="<?php echo url_for('revista/index') ?>" class="btn">Volver</a>
+			<a href="<?php echo url_for('publicidad/index') ?>" class="btn">Volver</a>
 		</div>
 	</div>
 </form>

@@ -1,4 +1,34 @@
-<h1>Sub Categorias</h1>
+
+<div class="row-fluid innerContent">
+	<form class="form-horizontal formBusqueda" id="form_filter"
+		action="<?php echo url_for('sub_categoria/index'); ?>" method="post">
+		<input type="hidden" id="page" value="0" name="page" />
+		<?php echo $filtro->renderHiddenFields()?>
+		<div class="row-fluid">
+			<div class="span5">
+				<?php echo $filtro['nombre']->renderLabel()?>
+				<?php echo $filtro['nombre']->render(array("class"=>"span12"))?>
+			</div>
+						<div class="span5">
+				<?php echo $filtro['categoria']->renderLabel()?>
+				<?php echo $filtro['categoria']->render(array("class"=>"span12"))?>
+			</div>
+		</div>
+		<!--/row-->
+		<div class="row-fluid">
+
+			<!--/span-->
+			<div class="span5">
+				<button type="submit" class="btn btn-success btnFiltro">Buscar</button>
+			</div>
+			<!--/span-->
+		</div>
+		<!--/row-->
+
+	</form>
+</div>
+
+
 <a href="<?php echo url_for('sub_categoria/new') ?>"
 	class="btn btn-primary btn-nuevo">Nueva Sub Categoria</a>
 

@@ -1,4 +1,3 @@
-<h1>Anunciantes</h1>
 <a href="<?php echo url_for('galeria/new') ?>"
 	class="btn btn-primary btn-nuevo">Nueva Galeria</a>
 

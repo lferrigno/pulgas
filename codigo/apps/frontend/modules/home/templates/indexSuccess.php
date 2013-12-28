@@ -48,26 +48,26 @@
 					<?php echo image_tag('botones/fiestas.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Fiestas</div></li>
-			<li ><a id="itemNinos" href="#" target="_blank"> <?php echo image_tag('botones/ninos.png',array()) ?>
+			<li ><a id="itemNinos" href="javascript:buscar('','2')" > <?php echo image_tag('botones/ninos.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Ni&ntilde;os</div></li>
-			<li ><a id="itemEducacion" href="#"
-				target="_blank"> <?php echo image_tag('botones/educacion.png',array()) ?>
+			<li ><a id="itemEducacion" href="javascript:buscar('','3')"
+				> <?php echo image_tag('botones/educacion.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Educaci&oacute;n</div>
 			</li>
-			<li ><a id="itemSalud" href="#" target="_blank"> <?php echo image_tag('botones/salud.png',array()) ?>
+			<li ><a id="itemSalud" href="javascript:buscar('','4')"> <?php echo image_tag('botones/salud.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Salud</div></li>
-			<li ><a id="itemOtros" href="#" target="_blank"> <?php echo image_tag('botones/otros profesionales.png',array()) ?>
+			<li ><a id="itemOtros" href="javascript:buscar('','5')"> <?php echo image_tag('botones/otros profesionales.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Otros Prof.</div></li>
-			<li ><a id="itemEstetica" href="#" target="_blank">
+			<li ><a id="itemEstetica" href="javascript:buscar('','6')">
 					<?php echo image_tag('botones/estetica.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Est&eacute;tica</div>
 			</li>
-			<li ><a id="itemHogar" href="#" target="_blank"> <?php echo image_tag('botones/hogar.png',array()) ?>
+			<li ><a id="itemHogar" href="javascript:buscar('','7')"> <?php echo image_tag('botones/hogar.png',array()) ?>
 			</a>
 				<div style="width: 70px; text-align: center;">Hogar</div></li>
 		</ul>
@@ -125,7 +125,7 @@
 		<div class="box_content">
 			<a class="view_more_left" href="javascript:abrirRevista(<?php echo $ultimaRevista->getId()?>)"> <?php echo image_tag('boton_verMas.png',array()) ?>
 			</a>
-			<?php echo image_tag('revista_online.png',array()) ?>
+			<div class="revista_home"><?php echo image_tag("../uploads/revista/".$ultimaRevista->getFotos()->getFirst()->getFilename(),array()) ?></div>
 		</div>
 	</div>
 

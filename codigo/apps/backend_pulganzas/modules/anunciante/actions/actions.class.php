@@ -12,9 +12,43 @@ class anuncianteActions extends sfActions
 {
 	public function executeIndex(sfWebRequest $request)
 	{
-		$this->anunciantes = Doctrine_Core::getTable('Anunciante')
-		->createQuery('a')
-		->execute();
+		
+		$this->filtro = new AnuncianteFormFilter();
+		
+		$filters = $request->getParameter('anunciante_filters');
+		$this->se_filtro = false;
+		// Si no existe la pagina tomo los filtros desde cero
+		if (!$request->getParameter('page') ) {
+			$query = $this->getQueryBusqueda($filters);
+		}
+		else{
+			// Si estoy en alguna pagina, tengo q recuperar los filtros
+			$filters = $this->getUser()->getAttribute('filtro');
+			$query = $this->getQueryBusqueda($filters);
+		}
+		$this->anunciantes = $query->execute();
+// 		Doctrine_Core::getTable('Anunciante')
+// 		->createQuery('a')
+// 		->orderBy('id DESC')
+// 		->execute();
+	}
+	
+	private function getQueryBusqueda(&$filters){
+		// Si se filtro hago la query en base al filtro
+		if($filters != null){
+			$this->se_filtro = true;
+			$this->filtro->bind($filters);
+			if($this->filtro->isValid() ){
+				// I store the filter parameters in the session variable
+				$this->getUser()->setAttribute('filtro', $filters);
+				$query = $this->filtro->getOwnQuery($filters);
+			}else{
+				$query = Doctrine::getTable('Anunciante')->getWhereQuery(array('1 = 2'));
+			}
+		}else{
+			$query = Doctrine::getTable('Anunciante')->getWhereQuery(array('1 = 3'));
+		}
+		return $query;
 	}
 
 	public function executeNew(sfWebRequest $request)

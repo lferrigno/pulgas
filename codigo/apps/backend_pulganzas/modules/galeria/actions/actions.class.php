@@ -77,7 +77,7 @@ class galeriaActions extends sfActions
 
   public function executeDelete(sfWebRequest $request)
   {
-    $request->checkCSRFProtection();
+//     $request->checkCSRFProtection();
 
     $this->forward404Unless($galeria = Doctrine_Core::getTable('Galeria')->find(array($request->getParameter('id'))), sprintf('Object galeria does not exist (%s).', $request->getParameter('id')));
     $galeria->delete();

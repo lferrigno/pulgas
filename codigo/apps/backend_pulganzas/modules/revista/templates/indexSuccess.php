@@ -1,4 +1,3 @@
-<h1>Anunciantes</h1>
 <a href="<?php echo url_for('revista/new') ?>"
 	class="btn btn-primary btn-nuevo">Nueva Revista</a>
 
