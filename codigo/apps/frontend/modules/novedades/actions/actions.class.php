@@ -20,8 +20,13 @@ class novedadesActions extends sfActions
 		$this->ultimaReceta = RecetaTable::getInstance()->obtenerUltimo();
 		$this->ultimoSorteo =SorteoTable::getInstance()->obtenerUltimo();
 		$this->ultimaGaleria = GaleriaTable::getInstance()->obtenerUltimo();
+		$this->cargarPublicidad();
 	}
 
+	private function cargarPublicidad(){
+		$this->publicidades = PublicidadTable::getInstance()->getByCodigo( sfConfig::get('app_publicidad_resto',2));
+	}
+	
 	public function executeSorteo(sfWebRequest $request)
 	{
 		$this->forward404Unless($sorteo = Doctrine_Core::getTable('Sorteo')->find(array($request->getParameter('id'))), sprintf('Object sorteo does not exist (%s).', $request->getParameter('id')));
@@ -31,6 +36,7 @@ class novedadesActions extends sfActions
 		$limit = 10;
 		$this->novedades = SorteoTable::getInstance()->getAllNewest($limit);
 		$this->urlShowNovedad = 'novedades_show_sorteo'; 
+		$this->cargarPublicidad();
 		$this->setTemplate('novedad');
 		
 	}
@@ -44,6 +50,7 @@ class novedadesActions extends sfActions
 		$limit = 10;
 		$this->novedades = RecetaTable::getInstance()->getAllNewest($limit);
 		$this->urlShowNovedad = 'novedades_show_receta';
+		$this->cargarPublicidad();
 		$this->setTemplate('novedad');
 	}
 	
@@ -57,6 +64,7 @@ class novedadesActions extends sfActions
 		$limit = 10;
 		$this->novedades = NotaTable::getInstance()->getAllNewest($limit);
 		$this->urlShowNovedad = 'novedades_show_nota';
+		$this->cargarPublicidad();
 	}
 	
 	
@@ -66,6 +74,7 @@ class novedadesActions extends sfActions
 		$this->novedad = $sorteo;
 		$this->urlVolver = $this->generateUrl('novedades_sorteo',array('id'=>$sorteo->getId()));
 		$this->nombreEncabezado = "Sorteo";
+		$this->cargarPublicidad();
 		$this->setTemplate('show');
 	}
 	
@@ -75,6 +84,7 @@ class novedadesActions extends sfActions
 		$this->novedad = $receta;
 		$this->urlVolver = $this->generateUrl('novedades_receta',array('id'=>$receta->getId()));
 		$this->nombreEncabezado = "Receta";
+		$this->cargarPublicidad();
 		$this->setTemplate('show');
 	}
 	
@@ -85,6 +95,7 @@ class novedadesActions extends sfActions
 		$this->novedad = $nota;
 		$this->urlVolver = $this->generateUrl('notas');
 		$this->nombreEncabezado = "Nota";
+		$this->cargarPublicidad();
 		$this->setTemplate('showNota');
 	}
 	
@@ -98,6 +109,7 @@ class novedadesActions extends sfActions
 		$this->novedades = PulguitaTable::getInstance()->getAllNewest($limit);
 		
 		$this->urlShowNovedad = 'novedades_show_pulguita';
+		$this->cargarPublicidad();
 		$this->setTemplate('novedad');
 	}
 	public function executeGaleria(sfWebRequest $request)
@@ -110,6 +122,7 @@ class novedadesActions extends sfActions
 		$this->galerias = GaleriaTable::getInstance()->getAllNewest($limit,$this->galeria->getCreatedAt());
 	
 		$this->urlShowNovedad = 'novedades_show_pulguita';
+		$this->cargarPublicidad();
 	}
 
 	public function executeShowPulguita(sfWebRequest $request)
@@ -117,6 +130,7 @@ class novedadesActions extends sfActions
 		$this->forward404Unless($pulguita = Doctrine_Core::getTable('Pulguita')->find(array($request->getParameter('id'))), sprintf('Object sorteo does not exist (%s).', $request->getParameter('id')));
 		$this->novedad = $pulguita;
 		$this->urlVolver = $this->generateUrl('novedades_pulguita',array('id'=>$pulguita->getId()));
+		$this->cargarPublicidad();
 		$this->setTemplate('show');
 	}
 	

@@ -516,6 +516,12 @@ p:hover {
 	width: 749px;
 }
 
+#myCarouselPublicidad {
+	margin-left: 100px;
+	margin-right: 100px;
+	width: 749px;
+}
+
 #myCarouselGaleria {
 	margin-left: 100px;
 	margin-right: 100px;
@@ -835,4 +841,10 @@ background-color: #FF0000;
 
 .publicidad{
 	margin: 19px;
+}
+
+.publicidad-home{
+	height: 200px;
+    margin-left: -80px;
+    overflow: hidden;
 }

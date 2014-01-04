@@ -4,3 +4,5 @@
 # default values
 all:
   cant_anunciantes: 4
+  publicidad_home: 1
+  publicidad_resto: 2

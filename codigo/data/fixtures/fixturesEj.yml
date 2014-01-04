@@ -1,0 +1,45 @@
+
+SubCategoria:
+  #<?php for($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_Fiesta_<?php echo $i ?>:
+    Categoria: fiestas
+    nombre: Fiestas <?php echo $i?>
+ #<?php endfor; ?>#
+  #<?php for ($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_ninos_1_1<?php echo $i?>:
+    Categoria: ninos
+    nombre: Niños <?php echo $i?>
+  #<?php endfor ?>#
+  #<?php for ($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_educacion_1_1<?php echo $i?>:
+    Categoria: educacion
+    nombre: Educacion <?php echo $i?>
+  #<?php endfor ?>#
+  #<?php for ($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_salud_1_1<?php echo $i?>:
+    Categoria: salud
+    nombre: Salud <?php echo $i?>
+  #<?php endfor ?>#
+  #<?php for ($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_otros_1_1<?php echo $i?>:
+    Categoria: otros
+    nombre: Otros profesionales <?php echo $i?>
+  #<?php endfor ?>#
+  #<?php for ($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_estetica_1_1<?php echo $i?>:
+    Categoria: estetica
+    nombre: Estetica <?php echo $i?>
+  #<?php endfor ?>#
+  #<?php for ($i = 0; $i <= 30; $i++): ?>#
+  sub_categoria_hogar_1_1<?php echo $i?>:
+    Categoria: hogar
+    nombre: Hogar <?php echo $i?>
+  #<?php endfor ?>#
+
+
+Sorteo:
+  sorteo1:
+    titulo: 'lalal'
+    texto: 'miuada  asd asda'
+
+  

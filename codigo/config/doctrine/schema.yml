@@ -155,6 +155,7 @@ Publicidad:
   actAs: [Timestampable]
   columns:
     titulo: {type: string(100), notnull: true}
+    codigo: { type: integer }
 
 PublicidadFoto:
   columns:

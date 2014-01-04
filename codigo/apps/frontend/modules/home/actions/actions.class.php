@@ -22,8 +22,13 @@ class homeActions extends sfActions
   	$this->ultimaReceta = RecetaTable::getInstance()->obtenerUltimo();
   	$this->ultimaGaleria = GaleriaTable::getInstance()->obtenerUltimo();
   	$this->ultimaNota= NotaTable::getInstance()->obtenerUltimo();
+  	$this->cargarPublicidad();
   	$this->filtro = new AnuncianteFormFilter();
   	 
+  }
+  
+  private function cargarPublicidad(){
+  	$this->publicidades = PublicidadTable::getInstance()->getByCodigo( sfConfig::get('app_publicidad_home',1));
   }
   
   public function executeNosotros(sfWebRequest $request)

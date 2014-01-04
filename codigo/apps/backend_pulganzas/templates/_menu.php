@@ -36,6 +36,14 @@
                         <li class="sub"><a href="<?php echo url_for('revista/index') ?>">Revista Online</a></li>
                     </ul>
                   </li>
+                                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;&nbsp;&nbsp;Publicidad
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="sub"><a href="<?php echo url_for('publicidad/index') ?>">Publicidad</a></li>
+                    </ul>
+                  </li>
                          
               
                 </ul>

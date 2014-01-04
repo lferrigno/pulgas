@@ -16,4 +16,11 @@ class PublicidadTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Publicidad');
     }
+    
+
+    public function getByCodigo($codigo) {
+    	$q = $this->createQuery('pub')
+    	->where('pub.codigo = ?', $codigo);
+    	return $q->fetchOne();
+    }
 }

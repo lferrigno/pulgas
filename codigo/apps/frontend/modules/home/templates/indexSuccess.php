@@ -88,12 +88,14 @@
 
 		</div>
 		<div class="section_content_home">
+		<?php if($ultimaNota):?>
 			<?php echo image_tag("../uploads/novedades/".$ultimaNota->getFilename(),array()) ?>
 			<div class="section_content_text"><?php echo strip_tags($ultimaNota->getResumen())?></div>
 			<div class="view_more">
 				<a href="<?php echo url_for('notas')?>"> <?php echo image_tag('boton_verMas.png',array()) ?>
 				</a>
 			</div>
+			<?php endif;?>
 		</div>
 	</div>
 	<div class="separador" style="margin-top: 270px;"></div>
@@ -107,12 +109,14 @@
 
 		</div>
 		<div class="section_content_home">
+		<?php if($ultimaReceta):?>
 			<?php echo image_tag("../uploads/novedades/".$ultimaReceta->getFilename(),array()) ?>
 			<div class="section_content_text halfCol"><?php echo $ultimaReceta->getTitulo()?></div>
 			<div class="view_more halfCol_more">
 				<a href="<?php echo url_for('novedades')?>"> <?php echo image_tag('boton_verMas.png',array()) ?>
 				</a>
 			</div>
+			<?php endif;?>
 		</div>
 	</div>
 
@@ -123,9 +127,11 @@
 		<div class="box_header_label"></div>
 
 		<div class="box_content">
-			<a class="view_more_left" href="javascript:abrirRevista(<?php echo $ultimaRevista->getId()?>)"> <?php echo image_tag('boton_verMas.png',array()) ?>
+<?php if ($ultimaRevista):?>
+		<a class="view_more_left" href="javascript:abrirRevista(<?php echo $ultimaRevista->getId()?>)"> <?php echo image_tag('boton_verMas.png',array()) ?>
 			</a>
 			<div class="revista_home"><?php echo image_tag("../uploads/revista/".$ultimaRevista->getFotos()->getFirst()->getFilename(),array()) ?></div>
+		<?php endif;?>
 		</div>
 	</div>
 
@@ -140,8 +146,10 @@
 
 		</div>
 		<div class="section_content_home">
+		<?php if($ultimaGaleria):?>
 			<a href="<?php echo url_for('novedades')?>"><?php echo image_tag("../uploads/galeria/".$ultimaGaleria->getFotos()->getFirst()->getFileName(),array()) ?>
 			</a>
+			<?php endif;?>
 		</div>
 	</div>
 
@@ -151,8 +159,8 @@
 		<div class="box_header_side"></div>
 		<div class="box_header_label"></div>
 
-		<div class="box_content">
-			<?php echo image_tag('pulbicidad.png',array()) ?>
+		<div class="box_content publicidad-home">
+		<?php include_partial('global/publicidad',array('publicidades'=>$publicidades));?>
 		</div>
 </div>
 
